@@ -1,0 +1,44 @@
+@media only screen  and (max-width : 1248px) {
+	#heyandrw-home .color{
+		width: 80%;
+	}
+
+}
+
+@media only screen  and (max-width : 1048px) {
+	section#about-heyandrw .container .heyandrw-photo{
+	width: 300px;
+	height: 100%;
+	background: url(../assets/heyandrw-photo.jpg);
+	background-size: cover;
+	background-position: center;
+	float: left;
+	position: absolute;
+	box-shadow: -12px 12px 100px #0a088b;
+	border:none;
+	}
+
+	section#about-heyandrw .container{
+	width: 90%;
+	height: auto;
+	margin: 50px auto;
+	float: left;
+	position: absolute;
+	left: 0px;
+	}
+}
+
+@media only screen  and (max-width : 830px) {
+	section#about-heyandrw .container .heyandrw-photo{
+	display: none;
+	}
+	section#about-heyandrw .container{
+	width: 450px;
+	height: auto;
+	margin: 50px auto;
+	float: none;
+	position: absolute;
+	left:0px;
+	right: 0px;
+	}
+}

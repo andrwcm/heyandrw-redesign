@@ -36,6 +36,15 @@ a .blue_button{
 	box-shadow: 0px 15px 35px rgba(5, 0, 229, .6);
 	margin-top: 50px;
 	cursor: pointer;
+	outline: none;
+}
+
+.bottom{
+	position: absolute;
+	bottom: 10%;
+	left: 0px;
+	right: 0px;
+	margin: auto;
 }
 
 a .white_button{
@@ -52,8 +61,35 @@ a .white_button{
 	box-shadow: 0px 15px 35px rgba(5, 0, 229, .6);
 	margin-top: 50px;
 	cursor: pointer;
+	outline: none;
 }
 
+
+#home{
+	display: block !important;
+	height: 155px;
+	margin: auto;
+	width: 155px;
+	position: fixed;
+	top: 68px;
+	left: 0px;
+	right: 0px;
+	z-index: 1;
+}
+
+#home img{
+	width: 100%;
+	height: auto;
+}
+
+.visible{
+	display: block !important;
+
+}
+
+.none{
+	display: none;
+}
 
 
 /* ---------------------------------------- END BUTTONS ---------------------------------------- */
@@ -65,16 +101,11 @@ html{
 
 
 body{
-	height: 2800px;
+	height: 100%;
 	margin: auto;
 	background: url(../assets/heyandrw-background-texture.jpg) fixed;
 	font-family: 'Abril Fatface', sans-serif;
 	background-size: cover;
-	-webkit-box-sizing:border-box;
- 	-moz-box-sizing:border-box;
- 	-ms-box-sizing:border-box;
-  	box-sizing:border-box;
-  	border: solid 15px #0500e5;
   	text-align: center;
 }
 
@@ -82,23 +113,26 @@ body{
 /* ---------------------------------------- HOME ---------------------------------------- */
 
 #heyandrw-home{
-	width: 1180px;
-	height: 720px;
-	margin: 80px auto;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	right: 0px;
+	width: 100%;
+	height: 100%;
+	margin:auto;
 	z-index: 111;
+	-webkit-box-sizing:border-box;
+ 	-moz-box-sizing:border-box;
+ 	-ms-box-sizing:border-box;
+  	box-sizing:border-box;
+  	border: solid 15px #0500e5;
 }
 
 h1.heyandrw{
 	display: block !important;
 	height: 155px;
-	margin:auto;
+	margin:50px auto;
 	width: 155px;
 	background: url(../assets/heyandrw.png) no-repeat;
 	background-size: cover;
+	position: relative;
+	z-index: 3;
 }
 
 h1.heyandrw span{
@@ -106,20 +140,78 @@ h1.heyandrw span{
 }
 
 #heyandrw-home .color{
-	width: 100%;
-	height: 350px;
+	width: 1180px;
+	height: 250px;
+	margin: auto;
 	background: url(../assets/heyandrw-fold.jpg) scroll;
 	background-size: cover;	
 	background-position: center;
-	margin-top: 35px;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
 	box-shadow: 0px 10px 70px rgba(0,0,0,.7);
 	z-index: 5;
 }
 
 .down{
 	margin: 60px auto;
-	width: 34px ;
-	height: 18px ;
+	width: 20px ;
+	height: 10px ;
+	position: absolute;
+	bottom: 5%;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+}
+
+#heyandrw-home .color .word{
+	width: 380px;
+	height: 245px;
+	margin:auto;
+	position: relative;
+	top: 20px;
+}
+
+#heyandrw-home .color span{
+	display: block;
+}
+
+#heyandrw-home .color span.divider{
+	height: 210px;
+	width: 1px;
+	background: white;
+	margin: auto;
+
+}
+
+#heyandrw-home .color span.designer{
+	font-family: 'Abril Fatface', sans-serif;
+	font-size: 100px;
+	width: 170px;
+	color: white;
+	float: right;
+	right: 0px;
+	top: 0px;
+	line-height: 67px;
+	text-align: left;
+	position: absolute;
+	text-shadow: 0px 0px 8px black;
+}
+
+#heyandrw-home .color span.firstWord{
+	width: 150px;
+	font-family: 'Abril Fatface', sans-serif;
+	color: white;
+	font-size: 70px;
+	float: left;
+	left: 20px;
+	top: 5px;
+	line-height: 70px;
+	position: absolute;
+	word-break: break-all;
+	text-align: right;
 }
 
 
@@ -127,13 +219,16 @@ h1.heyandrw span{
 /* ---------------------------------------- ABOUT ---------------------------------------- */
 
 section#about-heyandrw{
-	width: 99%;
+	width: 100%;
 	height: 100%;
-	background: url(../assets/heyandrw-background-texture-blue.jpg);
+	background: url(../assets/heyandrw-background-texture-blue.jpg) fixed;
 	z-index: 3333;
-	position: absolute;
-	top: 950px;
-	box-shadow: 0px 0px 450px #0500e5;
+	-webkit-box-sizing:border-box;
+ 	-moz-box-sizing:border-box;
+ 	-ms-box-sizing:border-box;
+  	box-sizing:border-box;
+  	border: solid 15px black;
+  	margin: auto;
 }
 
 section#about-heyandrw .container{
@@ -143,11 +238,14 @@ section#about-heyandrw .container{
 }
 
 section#about-heyandrw .container .heyandrw-photo{
+	display: block;
 	width: 460px;
 	height: 720px;
 	background: url(../assets/heyandrw-photo.jpg);
 	background-size: cover;
 	float: left;
+	box-shadow: -12px 12px 100px #0a088b;
+	border:solid 2px black;
 }
 
 section#about-heyandrw .container .aboutText{
@@ -214,10 +312,8 @@ span.emoji{
 section#work-heyandrw{
 	width: 99%;
 	height: 100%;
-	background: red;
+	background: url(../assets/heyandrw-background-texture.jpg) fixed;
 	z-index: 3333;
-	position: absolute;
-	top: 1800px;
 }
 
 

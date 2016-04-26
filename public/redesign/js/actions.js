@@ -6,9 +6,10 @@ $(function() {
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
-        },500);
+        },2100);
         return false;
       }
     }
   });
 });
+
