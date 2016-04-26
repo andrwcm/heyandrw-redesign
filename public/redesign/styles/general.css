@@ -132,7 +132,7 @@ h1.heyandrw{
 	background: url(../assets/heyandrw.png) no-repeat;
 	background-size: cover;
 	position: relative;
-	z-index: 3;
+	z-index: 999999;
 }
 
 h1.heyandrw span{

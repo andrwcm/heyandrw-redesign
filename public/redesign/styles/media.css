@@ -42,3 +42,63 @@
 	right: 0px;
 	}
 }
+
+@media only screen  and (max-width : 480px) {
+	#heyandrw-home .color span.divider{
+	display: none;
+	}
+
+	#heyandrw-home .color span.firstWord{
+	display: none;
+	}
+
+	#heyandrw-home .color span.designer{
+	font-family: 'Abril Fatface', sans-serif;
+	font-size: 70px;
+	width: 110px;
+	color: white;
+	float: none;
+	left: 0px;
+	margin: auto;
+	right: 0px;
+	top: 0px;
+	line-height: 50px;
+	text-align: left;
+	position: absolute;
+	text-shadow: 0px 0px 8px black;
+	z-index: 1;
+	}
+
+	#heyandrw-home .color .word{
+	width: 100%;
+	height: 245px;
+	margin:auto;
+	position: relative;
+	top: 20px;
+	}
+
+	section#about-heyandrw .container{
+	width: 90%;
+	height: auto;
+	margin:auto;
+	float: none;
+	position: relative;
+	left:0px;
+	right: 0px;
+	}
+
+	section#about-heyandrw .container .aboutText{
+	width: 90%;
+	height: auto;
+	color: white;
+	font-size: 20px;
+	font-family: 'Pontano Sans', sans-serif;
+	text-align: left;
+	float: right;
+	}
+	section#about-heyandrw{
+	width: 100%;
+	height: 150%;
+	}
+}
+	
