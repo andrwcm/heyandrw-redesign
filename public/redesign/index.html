@@ -12,7 +12,7 @@
 		<meta name="keywords" content="graphic-design, freelance, designer, design, ui/ux, web-design" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="transparent" />
-		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="shortcut icon" href="favicon.png" />
 		<link rel="apple-touch-icon" href="favicon.png"/>
 		<link rel="icon" href="favicon.png"/>
 
@@ -38,56 +38,62 @@
 
 	<body id="hey">
 
-	<ul class="contact">
-		<li>
-			<a href="#about-heyandrw">
-				ABOUT
-			</a>
-		</li>
-		<li>
-			<a href="#work-heyandrw">
-				WORK
-			</a>
-		</li>
-		<li>
-			<a href="http://twitter.com/heyandrw" target="_blank">
-				TWITTER
-			</a>
-		</li>
-		<li>
-			<a href="mailto:andrwhey@gmail.com" target="_blank">
-				EMAIL ME
-			</a>
-		</li>
-		<br>
-		<li>
-			<a href="index.html" id="home">
-				<img src="assets/heyandrw-letters.png">
-			</a>
-		</li>
-	</ul>
-		
+		<section class="heycontact">
+			<span class="close">X</span>
+			<div class="wrap">
+				<div id="avatar"></div>
+				<div class="textcontact">
+					Hey! Thanks for  your time, if your want to write me or just follow me <a href="https://www.youtube.com/watch?v=ZXsQAXx_ao0">just do it</a> :)
+				</div>
 
-		<section id="heyandrw-home">
-			<div class="figure">
+				<ul class="social">
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</section>
+
+		<a href="#hey">
+			<div class="heyandrw-home"></div>
+		</a>
+
+		<ul class="menu">
+			<a href="#about-heyandrw">
+				<li class="about">About</li>
+			</a>
+			<a href="#work-heyandrw">
+				<li class="work">Work</li>
+			</a>
+			<a href="#contact-heyandrw">
+				<li class="contact">Contact</li>
+			</a>
+		</ul>
+
+		<div class="blur1" data-stellar-ratio="0.3" ></div>
+		<div class="blur2" data-stellar-ratio="-0.1"></div>
+
+		<section id="heyandrw-home" data-stellar-background-ratio="-0.5">
+			<div class="figure" data-stellar-background-ratio="0.5">
 				<h1 class="heyandrw">
 					<span>heyandrw</span>
 				</h1>
 
-				<div class="color">
-					<div class="first-word">graphic</div>
-					<div class="designer">designer</div>
-
+				<div class="words">
+					<div class="first-word"><br></div>
+					<div class="designer">
+						<img src="assets/heyandrw-designer.png">
+					</div>
 					<a href="#about-heyandrw">
-						<input type="button" class="white_button bottom" value="ABOUT">
+						<input type="button" class="purple_button bottom" value="ABOUT">
 					</a>
-
 				</div>
+				
 			</div>
 		</section>
 
 
-		<section id="about-heyandrw">
+		<section id="about-heyandrw" data-stellar-background-ratio="0.5">
 				<div class="container">
 					<div class="aboutText">
 						<h2>About</h2>
@@ -98,27 +104,62 @@
 						He is a <a href="spotify:user:12140455403" target="_blank">Music lover</a><span class="emoji music"></span>, cat lover<span class="emoji cat"></span>, a <a href="https://www.youtube.com/watch?v=cnVRuH4vJWg" target="_blank">#PMA follower</a><span class="emoji pma"></span> and never gets tired of learning.
 						<p>
 						<a href="#work-heyandrw">
-							<input type="button" class="dark_button" value="WORK">
+							<input type="button" class="light_button" value="WORK">
 						</a>
 						</p>
 					</div>
 				</div>
 		</section>
 
-		<section id="work-heyandrw">
-			<div class="figure">	
+		<section id="work-heyandrw" data-stellar-background-ratio="-0.5">
+			<div class="figure" data-stellar-background-ratio="0.5">	
 				<div class="container">
-					<h2>Work</h2>
+					<h2 class="white">Work</h2>
 					<ul class="firstlist">
-						<li></li>
-						<li></li>
-						<li></li>
+						
+						<a href="http://bit.ly/heyfont" target="_blank">
+							<li class="heyfont">
+								<span>heyfont</span>	
+							</li>
+						</a>
+
+						<a href="http://bit.ly/heyfont" target="_blank">
+							<li>
+								<span>heyfont</span>	
+							</li>
+						</a>
+
+						<a href="http://bit.ly/heyfont" target="_blank">
+							<li>
+								<span>heyfont</span>	
+							</li>
+						</a>
+						
 					</ul>
+
 					<ul class="secoundlist">
-						<li></li>
-						<li></li>
-						<li></li>
+						
+						<a href="http://bit.ly/heyfont" target="_blank">
+							<li class="heyfont">
+								<span>heyfont</span>	
+							</li>
+						</a>
+
+						<a href="http://bit.ly/heyfont" target="_blank">
+							<li>
+								<span>heyfont</span>	
+							</li>
+						</a>
+
+						<a href="http://bit.ly/heyfont" target="_blank">
+							<li>
+								<span>heyfont</span>	
+							</li>
+						</a>
+						
 					</ul>
+
+					
 					
 				</div>
 			</div>
@@ -127,7 +168,25 @@
 	</body>
 
 	<!-- js -->
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/actions.js"></script>	
+	<script type="text/javascript" src="js/stellar.js"></script>
+	<script src="js/typed.js"></script>
+	<script>
+		$(function(){
+			$.stellar({
+				horizontalScrolling: false,
+				verticalOffset: 40
+			});
+		});
+		$(function(){
+	      $(".first-word").typed({
+	        strings: ["- Graphic -", "- Ui / Ux -", "- Some drawings -","- My own path -"],
+	        typeSpeed: 100,
+            backDelay: 1550,
+            loop: true,
+	      });
+	  	});
+	</script>
 
 </html>

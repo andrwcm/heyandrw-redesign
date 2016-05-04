@@ -7,62 +7,89 @@
 }
 
 
-@import url(//fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Lato);
 
 @font-face {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 
 /* ---------------------------------------- END FONTS ---------------------------------------- */
 
 
+/* BLUR */
+
+.blur1{
+	width: 430px;
+	height: 450px;
+	background-image: url(../assets/blur1.png);
+	background-size: cover;
+	position: fixed;
+	left: -210px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+	z-index: 888;
+}
+
+
+.blur2{
+	width: 430px;
+	height: 450px;
+	background-image: url(../assets/blur2.png);
+	background-size: cover;
+	position: fixed;
+	right: -210px;
+	bottom: -120px;
+	margin: auto;
+	z-index: 888;
+}
+
 
 
 
 /* BUTTONS */
 
-a .white_button{
+a .purple_button{
 	width: 200px;
 	height: 50px;
-	background-color: white;
+	background-color: #781eff;
+	appearance: none !important;
 	border: none;
-	color: #0926e0;
-	font-weight: 800;
+	color: white;
 	font-size: 18px;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 100;
+	font-family: 'Lato', sans-serif;
 	letter-spacing: 1px;
 	appearance: none !important;
 	text-align: center;
 	border-radius: 25px;
-	box-shadow: 0px 10px 35px rgba(0, 0, 0, .6);
+	box-shadow: 0px 10px 25px rgba(120, 30, 255, .4);
 	cursor: pointer;
 	outline: none;
 }
 
 .bottom{
 	position: absolute;
-	bottom: 40px;
+	bottom: -130px;
 	left: 0px;
 	right: 0px;
 	margin: auto;
 }
 
-a .dark_button{
+a .light_button{
 	width: 200px;
 	height: 50px;
-	background-color: #0926e0;
+	background-color: #0bf0e2;
 	border: none;
 	appearance: none !important;
 	color: white;
 	font-size: 18px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Lato', sans-serif;
 	letter-spacing: 1px;
 	text-align: center;
 	border-radius: 25px;
-	box-shadow: 0px 8px 35px rgba(9, 38, 224, 3);
-	margin:20px auto;
+	box-shadow: 0px 8px 35px rgba(11, 240, 226, 3);
+	margin:50px auto;
 	text-align: center;
 	position: absolute;
 	left: 0px;
@@ -71,49 +98,8 @@ a .dark_button{
 	outline: none;
 }
 
-
-ul.contact{
-	width: auto;
-	height: auto;
-	padding: 0px !important;
-	position: fixed;
-	right: 0px;
-	left: 0px;
-	margin: auto;
-	top: 0px;
-	z-index: 333;
-	opacity: 1;
-}
-
-ul.contact li{
-	color: black;
-	text-decoration: underline;
-	list-style: none;
-	display: inline-block;
-	margin: 15px;
-}
-
-ul.contact li a {
-	color: black !important;
-	text-decoration: underline;
-	display: block;
-	height: 20px;
-	padding-top: 15px;
-
-}
-
-
-ul.contact li a#home{
-	display: block !important;
-	height: 155px;
-	margin: auto;
-	width: 155px;
-	
-}
-
-ul.contact li a#home img{
-	width: 100%;
-	height: auto;
+.white{
+	color: white !important;
 }
 
 .visible{
@@ -123,6 +109,61 @@ ul.contact li a#home img{
 
 .none{
 	display: none;
+}
+
+
+.heyandrw-home{
+	display: none;
+	height: 215px;
+	display: none;
+	margin:auto;
+	width: 210px;
+	background: url(../assets/heyandrw-letters.png) no-repeat;
+	background-size: cover;
+	position: fixed;
+	top: 30px;
+	left: 0px;
+	right: 0px;
+	z-index: 3;
+}
+
+ul.menu{
+	width: auto;
+	height: 60px;
+	padding: 0px;
+	position: fixed;
+	float: right;
+	right: 40px;
+	top: 80px;
+	z-index: 888;
+
+}
+
+ul.menu a{
+	color: white;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+ul.menu a li{
+	border-bottom: solid 2px white;
+	list-style: none;
+	height: 12px;
+	display: inline-block;
+	margin: 0px 30px 0px 30px;
+	transition: .3s;
+}
+
+ul.menu a li:hover{
+	border-bottom: solid 2px #0bf0e2 ;
+	padding-bottom: 20px;
+}
+
+.active{
+	border-bottom: solid 2px #0bf0e2 !important;
+	padding-bottom: 20px;
 }
 
 
@@ -152,8 +193,6 @@ body{
 	height: 100%;
 	margin:auto;
 	z-index: 1;
-	position: fixed;
-	top: -0px;
 }
 
 .figure{
@@ -170,68 +209,51 @@ body{
 h1.heyandrw{
 	display: block !important;
 	height: 130px;
-	margin:50px auto;
+	margin:auto;
 	width: 130px;
 	background: url(../assets/heyandrw-white.png) no-repeat;
 	background-size: cover;
 	position: relative;
-	z-index: 999999;
+	z-index: 3;
+	top: 10%;
 }
 
 h1.heyandrw span{
 	display: none;
 }
 
-#heyandrw-home .color{
-	width: 550px;
-	height: 70%;
+#heyandrw-home .words{
+	width: 800px;
+	height:250px;
 	margin: auto;
-	background: url(../assets/heyandrw-fold.jpg) scroll;
-	background-size: cover;	
-	background-position: center;
 	position: absolute;
-	top: 20px;
+	left: 0px;
+	right: 0px;
 	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	z-index: 5;
-	text-align: center;
+	top: 0px;
 }
-
-.down{
-	margin: 60px auto;
-	width: 20px ;
-	height: 10px ;
-	position: absolute;
-	bottom: 5%;
-	left: 0px;
-	right: 0px;
-	margin: auto;
-}
-
-
-
-#heyandrw-home .color div.designer{
-	font-family: 'Abril Fatface', sans-serif;
-	font-size: 160px;
-	color: white;
-	left: -55px !important;
+#heyandrw-home div.designer{
+	width: 800px;
+	height: auto;
 	bottom: 150px;
 	margin: auto;
-	position: absolute;
-
 }
 
-#heyandrw-home .color div.first-word{
-	width: 550px;
+#heyandrw-home div.designer img{
+	width: 100%;
 	height: auto;
-	position: absolute;
+}
+
+#heyandrw-home div.first-word{
+	width: 800px;
+	height: 30px;
 	left: 0px;
 	right: 0px;
 	margin: auto;
-	bottom: 330px;
+	position: relative;
+	top: -50px;
 	color: white;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 100;
 	text-align: center;
 	font-size: 80px;
@@ -244,18 +266,19 @@ h1.heyandrw span{
 
 section#about-heyandrw{
 	width: 100%;
-	height: 1000px;
+	height: 1450px;
 	background: url(../assets/bg-about-heyandrw.jpg) fixed no-repeat;
 	background-size: cover;
 	background-position: top;
 	z-index: 2;
   	margin: auto;
-  	top: 120%;
   	position: relative;
 }
 
 .container{
-	width: 550px;
+	width: 1200px;
+	position: relative;
+	top: 180px;
 	height: auto;
 	margin:  auto;
 	text-align: center;
@@ -263,36 +286,36 @@ section#about-heyandrw{
 
 
 section#about-heyandrw .container .aboutText{
-	width: 550px;
+	width: 700px;
 	height: auto;
-	color: #252528;
-	font-size: 30px;
-	font-weight: 100;
-	font-family: 'Raleway', sans-serif;
+	color: white;
+	font-weight: 200;
+	font-size: 42px;
+	font-family: 'Lato', sans-serif;
 	text-align: left;
 	margin: auto;
 	position: relative;
-	top: 180px;
+
 }
 
 section#about-heyandrw .container .aboutText a{
-	color:#0926e0;
+	color:#0bf0e2;
 	text-decoration: underline;
 	font-weight: 600;
 }
 
 .container h2{
 	font-family: 'Abril Fatface', sans-serif;
-	font-size: 90px;
+	font-size: 125px;
 	letter-spacing: 2px;
-	margin: 30px auto;
-	text-align: center;
-	color: #0926e0;
+	margin:0px auto 50px auto;
+	text-align: left;
+	color: black;
 }
 
 span.emoji{
-	width: 32px;
-	height: 32px;
+	width: 45px;
+	height: 45px;
 	display: inline-block;
 	margin: 0px 5px -8px 5px;
 }
@@ -332,64 +355,179 @@ span.emoji{
 
 section#work-heyandrw{
 	width: 100%;
-	height: 1100px;
-	background: white;
+	height: 1350px;
+	background: url(../assets/heyandrw-background-texture.jpg) fixed;
 	position: relative;
-	top: 116%;
+	margin: auto;
 	z-index: 2;
 	text-align: center;
 }
 
-section#work-heyandrw .container{
-	width: 800px;
-	height: auto;
-	position: relative;
-	top: 190px;
-}
 
 ul.firstlist{
-	width: 800px;
+	width: 980px;
 	height:auto;
 	margin: auto;
 	padding: 0px !important;
 }
 
-ul.firstlist li{
+ul.firstlist a {
+	cursor: pointer;
+}
+
+
+ul.firstlist a li{
+	cursor: pointer;
 	display: inline-block;
 	list-style: none;
-	background: url(../assets/heyandrw-background-texture.jpg) fixed;
-	background-size: cover;
-	width: 180px;
-	height: 300px;
+	background: white;
+	width: 220px;
+	height: 400px;
 	margin: 10px;
+
 }
 
-ul.firstlist li:first-child{
-	width: 370px;
-	height: 300px;
+ul.firstlist a li span{
+	float: right;
+	right: 25px;
+	position: relative;
+	top: 80%;
+	font-size: 25px;
+	color: black;
 }
 
+ul.firstlist a li span:hover{
+	color: #781eff;
+}
+
+ul.firstlist a:first-child li{
+	width: 470px;
+}
+
+ul.firstlist a:first-child li span{
+	font-size: 60px;
+	top: 45%;
+}
 
 ul.secoundlist{
-	width: 800px;
+	width: 980px;
 	height:auto;
 	margin: auto;
 	padding: 0px !important;
 }
 
-ul.secoundlist li{
+ul.secoundlist a li{
 	display: inline-block;
 	list-style: none;
-	background: url(../assets/heyandrw-background-texture.jpg) fixed;
+	background: white;
 	background-size: cover;
-	width: 180px;
-	height: 300px;
+	width: 220px;
+	height: 400px;
 	margin: 10px;
 }
 
-ul.secoundlist li:last-child{
-	width: 370px;
-	height: 300px;
+ul.secoundlist a li span{
+	float: right;
+	right: 25px;
+	position: relative;
+	top: 80%;
+	font-size: 25px;
+	color: black;
+}
+
+ul.secoundlist a:last-child li{
+	width: 470px;
+}
+
+
+/* ---------------------------------------- projects classes ---------------------------------------- */
+
+.heyfont{
+	background: url(../assets/projects/heyfont.jpg) !important; 
+	background-size: cover !important;
+}
+
+
+
+/* ---------------------------------------- contact ---------------------------------------- */
+
+.heycontact{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.8);
+	z-index: 9999;
+	display: none;
+}
+
+.heycontact span.close{
+	cursor: pointer;
+	font-size: 40px;
+	color: white;
+	position: fixed;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	top: 30px;
+	right: 70px;
+	float: right;
+	z-index: 999999999;
+}
+
+.heycontact .wrap{
+	width: 500px;
+	height: 500px;
+	background: white;
+	position: absolute;
+	bottom: 0px;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	border-radius: 5px;
+}
+
+.heycontact .wrap #avatar{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: -70px;
+	margin: auto;
+	border-radius: 75px;
+	width: 120px;
+	height: 120px;
+	background: url(../assets/heyandrw-avatar.jpg);
+	background-size: 120%;
+	border: solid 2px #781eff;
+}
+
+.heycontact .wrap .textcontact{
+	width: 400px;
+	height: auto;
+	position: relative;
+	top: 90px;
+	font-family: 'Lato', sans-serif;
+	font-size: 22px;
+	font-weight: 200;
+	margin: auto;
+}
+
+.heycontact .wrap .textcontact a{
+	text-decoration: none;
+	font-weight:800;
+	color: #781eff;
+}
+
+.heycontact .wrap ul.social{
+	width: 400px;
+	height: auto;
+	padding: 0px !important;
+	margin: 15px auto;
+
+}
+
+.heycontact .wrap ul.social li{
+	list-style: none;
+	display: inline-block;
 }
 
 
