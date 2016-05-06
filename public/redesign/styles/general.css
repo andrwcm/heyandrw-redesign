@@ -548,7 +548,7 @@ ul.secoundlist a:last-child li span{
 	position: fixed;
 	background: rgba(0,0,0,.8);
 	z-index: 999999;
-	display: block;
+	display: none;
 }
 
 .heycontact span.close{
