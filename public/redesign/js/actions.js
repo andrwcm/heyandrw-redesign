@@ -16,13 +16,13 @@ $(function() {
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 700) {
+    if (scroll >= 500) {
         $(".heyandrw-home").fadeIn("fast");
     } else {
         $(".heyandrw-home").fadeOut("fast");
     }
 
-    if (scroll >= 700) {
+    if (scroll >= 500) {
         $(".about").addClass("active");
     } else {
         $(".about").removeClass("active");
