@@ -411,6 +411,7 @@ ul.firstlist a {
 
 
 ul.firstlist a li{
+	opacity: .4;
 	cursor: pointer;
 	display: inline-block;
 	background-position: bottom;
@@ -418,8 +419,14 @@ ul.firstlist a li{
 	background: white;
 	width: 270px;
 	height: 400px;
+	transition: .5;
 	margin-left: 13px;
 	margin-right: 13px;
+}
+
+ul.firstlist a li:hover{
+	opacity: 1;
+	box-shadow: 0px 0px 200px black;
 }
 
 ul.firstlist a li span{
@@ -465,6 +472,7 @@ ul.secoundlist a {
 
 
 ul.secoundlist a li{
+	opacity: .4;
 	cursor: pointer;
 	display: inline-block;
 	background-position: bottom;
@@ -474,6 +482,11 @@ ul.secoundlist a li{
 	height: 400px;
 	margin-left: 13px;
 	margin-right: 13px;
+}
+
+ul.secoundlist a li:hover{
+	opacity: 1;
+	box-shadow: 0px 0px 200px black;
 }
 
 ul.secoundlist a li span{
