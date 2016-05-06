@@ -40,6 +40,13 @@ $(window).scroll(function() {
 
 });
 
+//acciones precarga
+$(window).load(function() {
+      $("#status").fadeOut();
+      $("#preloader").delay(350).fadeOut("slow", function(){
+   });
+})
+
 
 
 

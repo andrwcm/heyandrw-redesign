@@ -16,6 +16,29 @@
 
 /* ---------------------------------------- END FONTS ---------------------------------------- */
 
+#preloader{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: white;
+ 	 z-index:999999999999999999999;
+}
+
+#preloader #status{
+	width: 100px;
+	height: 113px;
+	position: absolute;
+	margin: auto;
+	top: -100px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+}
+
+#preloader #status img{
+  width: 100%;
+  height: auto;
+}
 
 /* BLUR */
 
@@ -525,7 +548,7 @@ ul.secoundlist a:last-child li span{
 	position: fixed;
 	background: rgba(0,0,0,.8);
 	z-index: 999999;
-	display: none;
+	display: block;
 }
 
 .heycontact span.close{
@@ -565,7 +588,7 @@ ul.secoundlist a:last-child li span{
 	height: 120px;
 	background: url(../assets/heyandrw-avatar.jpg);
 	background-size: 120%;
-	border: solid 2px #781eff;
+	border: solid 2px black;
 }
 
 .heycontact .wrap .textcontact{
@@ -590,13 +613,33 @@ ul.secoundlist a:last-child li span{
 	height: auto;
 	padding: 0px !important;
 	margin: 15px auto;
+	position: relative;
+	top: 90px;
 
 }
 
-.heycontact .wrap ul.social li{
+.heycontact .wrap ul.social a li{
 	list-style: none;
 	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin: 20px;
 }
+
+.heycontact .wrap ul.social a{
+	text-decoration: none;
+}
+
+.heycontact .wrap ul.social a li img{
+	width: 100%;
+	height: auto;
+}
+
+.mclabel{
+	font-family: 'Lato', sans-serif;
+}
+
+
 
 
 

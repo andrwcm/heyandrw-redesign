@@ -38,6 +38,12 @@
 
 	<body id="hey">
 
+		<div id="preloader">
+		   <div id="status">
+		   		<img src="assets/loader.gif"/>
+		   </div>
+		 </div><!-- Preloader -->
+
 		<section class="heycontact">
 			<span class="close">X</span>
 			<div class="wrap">
@@ -45,12 +51,43 @@
 				<div class="textcontact">
 					Hey! Thanks for  your time, if your want to write me or just follow me <a href="https://www.youtube.com/watch?v=ZXsQAXx_ao0">just do it</a> :)
 				</div>
+				<p>
+					<ul class="social">
+						<a href="https://twitter.com/heyandrw" target="_blank">
+							<li>
+								<img src="assets/twitter.png">
+							</li>
+						</a>
+						<a href="mailto:andrwhey@gmail.com">
+							<li><img src="assets/email.png">
 
-				<ul class="social">
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
+							</li>
+						</a>
+						<a href="https://open.spotify.com/user/12140455403" target="_blank">
+							<li><img src="assets/spotify.png"></li>
+						</a>
+
+						<!-- mailchimp -->
+
+						<!-- Begin MailChimp Signup Form -->
+						<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+						<div id="mc_embed_signup">
+						<form action="//hol.us3.list-manage.com/subscribe/post?u=04bc529f6617905a4f5ee119c&amp;id=74db02c048" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">
+							<label for="mce-EMAIL" class="mclabel">Subscribe to my mailing list</label>
+							<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+						    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_04bc529f6617905a4f5ee119c_74db02c048" tabindex="-1" value=""></div>
+						    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+						    </div>
+						</form>
+						</div>
+
+						<!--End mc_embed_signup-->
+					</ul>	
+
+				</p>
+				
 			</div>
 		</section>
 
@@ -186,6 +223,17 @@
             loop: true,
 	      });
 	  	});
+	</script>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-77378948-1', 'auto');
+	  ga('send', 'pageview');
+
 	</script>
 
 </html>
