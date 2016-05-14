@@ -51,7 +51,7 @@ $(window).load(function() {
 
 
 $(document).ready(function(){
-    $(".contact").click(function(){
+    $(".contact, .light_button, .contact-button").click(function(){
     $(".heycontact").fadeIn();
     });
 
