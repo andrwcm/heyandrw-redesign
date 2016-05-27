@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+<body>
+
+<div id="demo1"></div>
+<div id="demo2"></div>
+
+<script type="text/javascript" src="wiki.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script>
+    $(document).ready(function() {
+      $('#demo1').WikipediaWidget('Stuttgart');
+      $('#demo2').WikipediaWidget('Albert Einstein', { 'showTitle' : false, 'maxThumbnails' : 6 });
+    });         
+  </script>
+</body>
+</html>
