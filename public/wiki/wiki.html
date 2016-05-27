@@ -1,34 +1,13 @@
-<!DOCTYPE html>
+
 <html>
 <head>
-	<title></title>
-	<style type="text/css">
-		.ajaxLoading {margin-top:50px;text-align:center;}    
-.wikipediaContainer {        
-  position:relative;
-  min-height:150px;
-  width:600px;
-  padding:10px;
-  border-radius:5px;
-  background:#ddd;
-}
-.wikipediaContainer .bg {
-  position:absolute;
-  bottom:20px;
-  right:20px;
-  width:135px;
-  height:155px;
-  background: no-repeat url('http://upload.wikimedia.org/wikipedia/commons/3/30/Wikipedia_2.0-new_prototype.png');
-  opacity:0.3;
-}
-.wikipediaContainer .wikipediaTitle {text-align:center;height:30px;font:20px Verdana bold;border-radius:5px 5px 0 0;background:#fff;margin:-5px 0 10px 0;line-height:30px;}
-.wikipediaContainer .wikipediaLogo {width:150px;float:left;margin-right:20px;}
-.wikipediaContainer .wikipediaDescription {float:left;width:430px;}
-.wikipediaContainer ul.wikipediaThumbGallery {float:left;width:600px;list-style:none;padding:0;}
-.wikipediaContainer ul.wikipediaThumbGallery li {display:inline-block;float:left;margin:0 10px 10px 0;}
-.wikipediaContainer table.wikipediaInfoTable {float:left;width:600px;}
-.wikipediaContainer .clear {clear:both;}
-	</style>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">        
+  <title>jQuery Wikipedia Plugin by Marcel Grolms - www.suabo.de</title>
+  <link rel="stylesheet" type="text/css" href="css/jquery.wikipedia.css">
+  <style>
+    body {font:12px Verdana;}
+    h1, h2 {background:#ddd;border-radius:5px;padding:5px 20px;}
+  </style>     
 </head>
 <body>
   <h1>jQuery Wikipedia Plugin</h1>
@@ -67,11 +46,9 @@ $('#ContainerToLoadWikipediaContent').WikipediaWidget('Page Title', [{ 'showTitl
     $('#demo2').WikipediaWidget('Albert Einstein', { 'showTitle' : false, 'maxThumbnails' : 6 });
     
   </pre>
-
-
-<script type="text/javascript" src="wiki.js"></script>
-<script type="text/javascript" src="jquery.js"></script>
-<script>
+  <script src="js/jquery.min.js" ></script>
+  <script src="js/jquery.wikipedia.js" ></script>
+  <script>
     $(document).ready(function() {
       $('#demo1').WikipediaWidget('Stuttgart');
       $('#demo2').WikipediaWidget('Albert Einstein', { 'showTitle' : false, 'maxThumbnails' : 6 });
