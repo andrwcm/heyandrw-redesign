@@ -329,7 +329,7 @@ section#about-heyandrw{
 	height: 1000px;
 	background: url(../assets/bg-about-heyandrw.jpg) fixed no-repeat;
 	background-size: cover;
-	background-position: top;
+	background-position: bottom;
 	z-index: 2;
   	margin: auto;
   	position: relative;
