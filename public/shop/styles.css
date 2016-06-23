@@ -1,0 +1,247 @@
+#preloader{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: white;
+ 	 z-index:999999999999999999999;
+}
+
+#preloader #status{
+	width: 100px;
+	height: 113px;
+	position: absolute;
+	margin: auto;
+	top: -100px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+}
+
+#preloader #status img{
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+/* FONTS */
+
+@import url(//fonts.googleapis.com/css?family=Abril+Fatface);
+
+@font-face {
+    font-family: 'Abril Fatface', sans-serif;
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+	background: #F8F8F8;
+}
+
+header{
+	height: 120px;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	position: fixed;
+	z-index: 999;
+}
+
+header h1.heyshop{
+	width: 98px;
+	height: 98px;
+	margin: auto;
+	top: 15px;
+	position: relative;
+	z-index: 999;
+}
+
+header h1.heyshop img{
+	width: 100%;
+	height: auto;
+}
+
+section.fold{
+	width: 96%;
+	margin: auto;
+	position: relative;
+	top:150px;
+	height: 460px;
+	padding: 0px;
+	background: url(assets/fold.png) center bottom;
+	background-size: cover;
+
+}
+
+section.fold .text{
+	width: 503px;
+	height: 143px;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+}
+
+section.fold .text img{
+	width: 100%;
+	height: auto;
+}
+
+section.fold a.link_pro{
+	width: 100%;
+	text-align: center;
+	font-weight: 200;
+	color: white;
+	text-decoration: none;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 50px;
+	margin: auto;
+}
+
+section.fold a.link_pro:before{
+	display: block !important;
+	content:"";
+	display: inline-block;
+	width: 0; 
+  	height: 0; 
+  	position: absolute;
+  	left: 0px;
+  	right: 0px;
+  	margin: auto;
+  	top:30px;
+  	border-left: 7px solid transparent;
+  	border-right: 7px solid transparent;
+  	border-top: 7px solid #F5A623;
+  	transition: .4s;
+}
+section.fold a.link_pro:hover:before{
+	top:35px;
+}
+
+
+section#productos{
+	width: 940px;
+	height: auto;
+	margin: auto;
+	text-align: center;
+	position: relative;
+	top: 250px;
+}
+
+section#productos ul.lineas{
+	width: 100%;
+	padding: 0px;
+	margin: auto;
+	height: 724px;
+}
+
+section#productos ul.lineas li{
+	width: 427px;
+	height: 724px;
+	display: block;
+	background: url(assets/bg.png);
+	background-size: cover;
+}
+
+section#productos ul.lineas li h2{
+	color: white;
+	font-size: 55px;
+	font-family: 'Abril Fatface', sans-serif;
+}
+
+section#productos ul.lineas li span.disponibles{
+	color: #4A4A4A;
+	font-size: 28px;
+	font-weight: 200 !important;
+	position: relative;
+	top:-35px;
+}
+
+section#productos ul.lineas li div.preview{
+	width: 100%;
+	height: 437px;
+	margin: auto;
+}
+
+section#productos ul.lineas li div.preview img{
+	width: 320px;
+	height: auto;
+	position: relative;
+	left: -40px;
+}
+
+section#productos ul.lineas li a.button_ver{
+	color: white;
+	text-decoration: none;
+	width: 303px;
+	text-align: center;
+	border-radius: 43px;
+	border: solid 2px white;
+	height: 50px;
+	display: block;
+	font-size: 24px;
+	font-weight: 200;
+	padding-top: 15px;
+	margin: auto;
+	position: relative;
+	top: -10px;
+}
+
+section#productos ul.lineas li.pre-venta{
+	float: left;
+}
+
+section#productos ul.lineas li.venta{
+	float: right;
+}
+
+
+span.divider{
+	width: 80%;
+	height: 1px;
+	background: #979797;
+	display: block !important;
+	margin: 60px auto;
+	position: relative;
+	top:300px;
+}
+
+div.diseno{
+	width: 100%;
+	height: 120px;
+	text-align: center;
+	margin: auto;
+	position: relative;
+	top:300px;
+}
+
+div.diseno span {
+	color: #4A4A4A;
+	font-weight: 200;
+	font-size: 17px;
+	margin: 30px auto;
+}
+
+div.diseno img{
+	width: 125px;
+	height: auto;
+	margin: 30px auto;
+	border-radius: 50%;
+}
+
