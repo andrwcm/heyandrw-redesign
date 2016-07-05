@@ -414,8 +414,22 @@ span.breadcrum{
 
 .container section.producto .innercontainer .descrip  .price{
 	font-family: Abril Fatface;
-	margin: 0px;
+	position: relative;
+	float: left;
+	margin: -30px auto;
 	font-size: 35px;
 	color: #FFFFFF;
-	letter-spacing: 0px;
+	height: auto;
+}
+
+.botoncompra{
+	float: left;
+	position: relative;
+	top:20px;
+	left: -20px;
+}
+
+span.smalltext{
+	font-size: 12px;
+	color: white;
 }
