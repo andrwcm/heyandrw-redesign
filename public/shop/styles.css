@@ -245,3 +245,177 @@ div.diseno img{
 	border-radius: 50%;
 }
 
+
+
+/* interior productos */
+
+.foldpro{
+	width: 20%;
+	height: 1px;
+	background: url(assets/bg.png);
+	background-size: cover;
+	text-align: center;
+	padding-top: 1px;
+	margin: auto;
+	font-family: 'Abril Fatface', sans-serif;
+	color: #4A4A4A;
+	position: relative;
+	top: 250px; 
+}
+
+.foldpro h2{
+	height: 1px;
+	display: block;
+	font-size: 40px;
+	position: relative;
+	top: -120px;
+}
+
+ul.descripcion li.preview a.button_comprar{
+	background: #F9A943;
+	color: white;
+	text-decoration: none;
+	width: 200px;
+	text-align: center;
+	border-radius: 43px;
+	border: solid 2px white;
+	height: 40px;
+	display: block;
+	font-size: 19px;
+	font-weight: 200;
+	padding-top: 15px;
+	margin: 30px auto;
+	position: relative;
+	top: 0px;
+}
+
+
+ul.descripcion{
+	width: 100%;
+	height: auto;
+	margin-top: 60px;
+}
+
+ul.descripcion li{
+	list-style: none;
+}
+
+
+ul.descripcion li.preview{
+	width: 427px;
+	height: 600px;
+	background: white;
+	box-shadow: 0px 0px 15px rgba(0,0,0,.1);
+}
+
+ul.descripcion .preview img{
+	width: 70%;
+	height: auto;
+	border: none;
+	margin: 20px auto;
+}
+
+ul.descripcion .preview h3{
+	font-size: 20px;
+	font-weight: 200;
+}
+
+
+/* venta */
+
+.container{
+	width: 620px;
+	height: auto;
+	position: relative;
+	margin: auto;
+	top:200px;
+}
+
+
+span.breadcrum{
+	font-family: OpenSans-Light;
+	font-size: 20px;
+	color: #4A4A4A;
+	letter-spacing: 0px;
+}
+
+.container h2{
+	font-family: AbrilFatface-Regular;
+	font-size: 93px;
+	color: #F5A623;
+	letter-spacing: 0px;
+	margin: -10px auto;
+}
+
+.container section.producto{
+	background-image: linear-gradient(-180deg, #FAD961 0%, #F76B1C 100%);
+	box-shadow: 0px 0px 54px 0px rgba(0,0,0,0.12);
+	border-radius: 9px;
+	width: 100%;
+	height: 588px;
+	margin: 90px auto;
+}
+
+.container section.producto .innercontainer{
+	width: 97%;
+	height: auto;
+	margin: auto;
+}
+
+.container section.producto .innercontainer .imgpro{
+	float: left;
+	width: 360px;
+	height: auto;
+	left: -150px;
+	overflow: hidden;
+	position: relative;
+	top:30px;
+}  
+
+.container section.producto .innercontainer .imgpro img{
+	width: 110%;
+	height: auto;
+	float: left;
+	left: -40px;
+	position: relative;
+}
+
+.container section.producto .innercontainer .descrip{
+	float: right;
+	width: 370px;
+	height: auto;
+	position: absolute;
+	right: 0px;
+	top:270px;
+
+}
+
+.container section.producto .innercontainer .descrip h3{
+	font-family: Abril Fatface;
+	font-size: 45px;
+	color: #FFFFFF;
+	letter-spacing: 0px;
+	margin: -20px auto 10px auto;
+}
+
+.container section.producto .innercontainer .descrip  span.decriptext{
+	font-family: Lato;
+	font-size: 17px;
+	color: #000000;
+	font-weight: 200;
+	letter-spacing: 0px;
+	margin: 20px auto;
+	position: relative;
+}
+
+.spotify{
+	margin: 20px auto;
+}
+
+.container section.producto .innercontainer .descrip  .price{
+	font-family: Abril Fatface;
+	margin: 0px;
+	font-size: 35px;
+	color: #FFFFFF;
+	letter-spacing: 0px;
+}
