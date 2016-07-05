@@ -80,8 +80,23 @@
 					</div>
 
 					<span class="price">$80.000</span>
-
-					<a href="" class="buttonbuy"></a>
+					<form method="post" action="https://gateway.payulatam.com/ppp-web-gateway/pb.zul" accept-charset="UTF-8">
+					  <input type="image" border="0" alt="" src="http://www.heyandrw.com/shop/assets/comprar.png" onClick="this.form.urlOrigen.value = window.location.href;"/>
+					  <input name="buttonId" type="hidden" value="FlycCrcRx11JGS5CbyCw0IOJa/YhX8RTu4FQRUoctdq534SYTEIPiw=="/>
+					  <input name="merchantId" type="hidden" value="569575"/>
+					  <input name="accountId" type="hidden" value="572207"/>
+					  <input name="description" type="hidden" value="Ilustración Gods Country"/>
+					  <input name="referenceCode" type="hidden" value="Cuadro Gods Conuntry"/>
+					  <input name="amount" type="hidden" value="90000"/>
+					  <input name="tax" type="hidden" value="0"/>
+					  <input name="taxReturnBase" type="hidden" value="0"/>
+					  <input name="shipmentValue" value="10000" type="hidden"/>
+					  <input name="currency" type="hidden" value="COP"/>
+					  <input name="lng" type="hidden" value="es"/>
+					  <input name="sourceUrl" id="urlOrigen" value="" type="hidden"/>
+					  <input name="buttonType" value="SIMPLE" type="hidden"/>
+					  <input name="signature" value="6d447606372610cb52f8847beb316c475fcab0e51a1ea102e0d7c724c6388bda" type="hidden"/>
+					</form>
 				</div>
 			</div>
 		</section>
