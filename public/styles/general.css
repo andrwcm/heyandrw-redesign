@@ -7,11 +7,26 @@
 }
 
 
-@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(//fonts.googleapis.com/css?family=Enriqueta:400,700);
 
 @font-face {
-    font-family: 'Lato', sans-serif;
+	font-family: 'Enriqueta', serif;
 }
+
+
+//--- clearfix
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+ }
+.clearfix { display: inline-table; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
 
 
 /* ---------------------------------------- END FONTS ---------------------------------------- */
@@ -40,36 +55,7 @@
   height: auto;
 }
 
-/* BLUR */
 
-.blur1{
-	width: 430px;
-	height: 450px;
-	background-image: url(../assets/blur1.png);
-	background-size: cover;
-	position: fixed;
-	left: -300px;
-	top: 0px;
-	opacity: .5;
-	bottom: 0px;
-	margin: auto;
-	z-index: 888;
-}
-
-
-.blur2{
-	display: block;
-	width: 430px;
-	height: 450px;
-	opacity: .5;
-	background-image: url(../assets/blur2.png);
-	background-size: cover;
-	position: fixed;
-	right: -270px;
-	bottom: -120px;
-	margin: auto;
-	z-index: 888;
-}
 
 
 
@@ -78,29 +64,57 @@
 
 a .purple_button{
 	width: 200px;
-	height: 50px;
-	background-color: #781eff;
+	height: 45px;
+	background-color: #02FCF2;
 	appearance: none !important;
 	border: none;
-	color: white;
-	font-size: 18px;
-	font-family: 'Lato', sans-serif;
+	color: #000000;
+	font-size: 16px;
+	font-family: 'Enriqueta', serif;
 	letter-spacing: 1px;
 	-webkit-appearance: none !important;
 	text-align: center;
 	border-radius: 25px;
-	box-shadow: 0px 10px 45px rgba(120, 30, 255, .7);
 	cursor: pointer;
 	outline: none;
+	position: relative;
+	left:0px;
+	float: left;
 }
 
-.bottom{
-	position: absolute !important;
-	bottom: -430px;
-	left: 0px;
-	right: 0px;
-	margin: auto;
+a.button:after{
+	display: inline-block;
+	position: relative;
+	float: left;
+	left:-200px;
+	top: -10px;
+	transition: .5s;
+	content: url("../assets/figure1.png");
 }
+
+
+a.button:hover:after{
+	left:-190px;
+	top: -15px;
+	transition: .5s;
+}
+
+a.button:before{
+	display: inline-block;
+	position: relative;
+	float: right;
+	left: -308px;
+	z-index: 88;
+	top: 0px;
+	content: url("../assets/figure2.png");
+	transition: .5s;
+}
+
+a.button:hover:before{
+	left: -268px;
+	top: 10px;
+}
+
 
 a .light_button{
 	width: 200px;
@@ -110,11 +124,10 @@ a .light_button{
 	-webkit-appearance: none !important;
 	color: white;
 	font-size: 18px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Enriqueta', serif;font-family: 'Enriqueta', serif;
 	letter-spacing: 1px;
 	text-align: center;
 	border-radius: 25px;
-	box-shadow: 0px 8px 35px rgba(11, 240, 226, .7);
 	margin:50px auto;
 	float: left;
 	cursor: pointer;
@@ -129,7 +142,7 @@ a .line_button{
 	-webkit-appearance: none !important;
 	color: white;
 	font-size: 18px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Enriqueta', serif;
 	letter-spacing: 1px;
 	text-align: center;
 	border-radius: 25px;
@@ -181,7 +194,7 @@ ul.menu{
 ul.menu a{
 	color: white;
 	font-size: 20px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Enriqueta', serif;
 	font-weight: 600;
 	text-decoration: none;
 }
@@ -217,7 +230,7 @@ html{
 body{
 	height: 100%;
 	margin: auto;
-	background: url(../assets/heyandrw-background-texture.jpg) fixed;
+	background:#0E0E0E;
 	background-position: top;
 	font-family: 'Abril Fatface', sans-serif;
 	background-size: cover;
@@ -245,22 +258,197 @@ body{
 
 
 
+
+/* ---------------------------------------- menu ---------------------------------------- */
+
+nav#menu_btn{
+	width: 100%;
+	height: 150px;
+	position: fixed;
+	z-index: 9999;
+}
+
+nav#menu_btn h1{
+	width: 100px;
+	height: 100px;
+	background-size: 100% 100%;
+}
+
+nav#menu_btn #menu{
+	width: 40px;
+	height: 20px;
+	float: right;
+	right: 152px;
+	position: absolute;
+	top: 80px;
+	cursor:pointer;
+}
+
+nav#menu_btn #menu span{
+	width: 40px;
+	height: 1px;
+	margin-top: 3px;
+	background: white;
+	display: block;
+	position: relative;
+	transition: .3s;
+}
+
+nav#menu_btn #menu span.close{
+	display: none;
+}
+
+
+nav#menu_btn #menu span.close:first-child{
+	transform: rotate(45deg);
+	display: block !important;
+}
+
+nav#menu_btn #menu span.close:last-child{
+	transform: rotate(-45deg);
+	top: -7px;
+	display: block !important;
+}
+
+
+nav#menu_btn #menu:hover span.close:first-child{
+	transform: rotate(48deg);
+	display: block !important;
+	top: 0px !important;
+}
+
+nav#menu_btn #menu:hover span.close:last-child{
+	transform: rotate(-48deg);
+	top: -3px !important;
+	display: block !important;
+}
+
+nav#menu_btn #menu span:first-child{
+	top: -3px;
+}
+
+
+nav#menu_btn #menu:hover span:first-child{
+	top: -5px;
+}
+
+
+nav#menu_btn #menu span:last-child{
+	top: 3px;
+}
+
+nav#menu_btn #menu:hover span:last-child{
+	top: 5px;
+}
+
+
+div#menu_open{
+	display:none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 999;
+	background-image: linear-gradient(90deg, rgba(0,0,0,0.00) 6%, #111111 78%);
+}
+
+div#menu_open ul{
+	padding: 0px;
+	width: 188px;
+	height: 320px;
+	position: absolute;
+	right: 145px;
+	top:140px;
+}
+
+div#menu_open ul li{
+	list-style: none;
+	text-align: right;
+	margin:12px auto;
+	transition: .5s;
+}
+
+
+div#menu_open ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 35px;
+	font-family: 'Enriqueta', serif;
+	transition: .7s;
+}
+
+
+div#menu_open ul li a:hover{
+	color: #02D1C9;
+	transition: .3s;
+}
+
+
+
 /* ---------------------------------------- HOME ---------------------------------------- */
 
 #heyandrw-home{
 	width: 100%;
-	height: 100%;
+	height: 928px;
+	background: url(../assets/heyandrw_hero.jpg) right fixed;
+	background-size: cover;
 	margin:auto;
 	z-index: 1;
 	overflow: hidden;
 }
 
-.figure{
-	background: url(../assets/heyandrw-figures.png) fixed;
-	background-position: top;
-	background-size: 70%;
+#heyandrw-home nav#redes{
+	width: 252px;
+	height: 25px;
+	margin: 0px 0px 80px 100px;
+}
+#heyandrw-home nav#redes ul{
+	padding: 0px;
+	margin:auto;
+	height: 24px;
+}
+
+#heyandrw-home nav#redes ul a{
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: 'Enriqueta', serif;
+	font-weight: 400;
+}
+
+#heyandrw-home nav#redes ul a li{
+	display: inline-block;
+	position: relative;
+	margin: auto;
+}
+
+#heyandrw-home nav#redes ul a li:after{
 	width: 100%;
-	height: 100%;
+	height: 1px;
+	background: rgba(255,255,255,.2);
+	display: block;
+	content: "";
+	position: relative;
+	top: 5px;
+	transition: .7s;
+}
+
+#heyandrw-home nav#redes ul a li:hover:after{
+	height: 2px;
+	background: rgba(255,255,255,.9);
+}
+
+#heyandrw-home nav#redes ul a li:first-child{
+	margin: 0px 32px 0px 0px;
+}
+
+#heyandrw-home nav#redes ul a li:last-child{
+	margin: 0px 0px 0px 32px;
+}
+
+.figure{
+	background: url(../assets/heyandrw-figures.png) left no-repeat;
+	width: 100%;
+	height: 928px;
 	margin:auto;
 	text-align: center;
 	z-index: 111;
@@ -269,10 +457,11 @@ body{
 h1.heyandrw{
 	display: block !important;
 	height: 100px;
-	margin:auto;
+	margin: 49px 0px 66px 130px;
 	width: 100px;
-	background: url(../assets/heyandrw-white.png) no-repeat;
+	background: url(../assets/heyandrw-letters.png) no-repeat;
 	background-size: cover;
+	left:0px;
 	position: relative;
 	z-index: 3;
 	top:0px;
@@ -283,20 +472,15 @@ h1.heyandrw span{
 }
 
 #heyandrw-home .words{
-	width: 800px;
-	height:250px;
-	margin: auto;
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	top: 0px;
-	bottom: 0px;
+	width: 484px;
+	height:322px;
+	margin: 0px 0px 0px 126px;
+	position: relative;
 }
 #heyandrw-home div.designer{
-	width: 600px;
-	height: auto;
-	bottom: 150px;
-	margin: auto;
+	width: 484px;
+	height: 80px;
+	margin: 0px 0px 25px 0px;
 }
 
 #heyandrw-home div.designer img{
@@ -305,18 +489,17 @@ h1.heyandrw span{
 }
 
 #heyandrw-home div.first-word{
-	width: 800px;
+	width: 484px;
 	height: 30px;
 	left: 0px;
 	right: 0px;
-	margin: auto;
+	margin: 0px 0px 85px 0px;
 	position: relative;
-	top: -50px;
 	color: white;
-	font-family: 'Lato', sans-serif;
-	font-weight: 100;
-	text-align: center;
-	font-size: 60px;
+	font-family: 'Enriqueta', serif;
+	font-weight:400;
+	text-align: left;
+	font-size: 35px;
 }
 
 
@@ -326,24 +509,26 @@ h1.heyandrw span{
 
 section#about-heyandrw{
 	width: 100%;
-	height: 1000px;
-	background: url(../assets/bg-about-heyandrw.jpg) fixed no-repeat;
+	height: 1542px;
+	background: url(../assets/bg-about-heyandrw.jpg) no-repeat;
 	background-size: cover;
-	background-position: bottom;
+	background-position: top;
 	z-index: 2;
-  	margin: auto;
+  	margin:auto;
   	position: relative;
 }
 
 section#about-heyandrw .layout .aboutText{
-	width: 70%;
-	height: auto;
+	width: 530px;
+	height: 1340px;
 	color: white;
 	font-weight: 100;
 	font-size: 35px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Enriqueta', serif;
 	text-align: left;
-	margin: auto;
+	position: relative;
+	line-height: 57px;
+	top: 96px;
 	position: relative;
 
 }
@@ -359,46 +544,61 @@ section#about-heyandrw .layout .aboutText a{
 	font-family: 'Abril Fatface', sans-serif;
 	font-size: 125px;
 	letter-spacing: 2px;
-	margin:0px auto 40px auto;
+	margin:0px auto 120px auto;
 	text-align: left;
-	color: rgba(255, 255, 255,.7);
+	color: white;
 }
 
 span.emoji{
-	width: 45px;
-	height: 45px;
+	width: 32px;
+	height: 35px;
 	display: inline-block;
-	margin: 0px 5px -8px 5px;
+	margin: 0px 10px -8px 10px;
+	background-repeat: no-repeat;
 }
 
 .andrw{
-	background: url(../assets/mostache.png);
-	background-size: cover;
+	background: url(../assets/mostache.png) no-repeat;
+	background-size: 97% 100%;
 }
 
 .monoku{
-	background: url(../assets/monoku.png);
-	background-size: cover;
+	background: url(../assets/monoku.png)no-repeat;
+	background-size: 100% 90%;
 }
 
 .hey{
-	background: url(../assets/hey.png);
-	background-size: cover;
+	background: url(../assets/hey.png)no-repeat;
+	background-size: 100% 95%;
 }
 
 .music{
-	background: url(../assets/music.png);
-	background-size: cover;
+	background: url(../assets/music.png)no-repeat;
+	background-size: 100% 100%;
 }
-
 .cat{
 	background: url(../assets/cat.png);
-	background-size: cover;
+	background-size: 100% 100%;
 }
 
 .pma{
 	background: url(../assets/pma.png);
-	background-size: cover;
+	background-size: 85% 100%;
+}
+
+.desing{
+	background: url(../assets/design.png);
+	background-size: 100% 90%;
+}
+
+.ok{
+	background: url(../assets/ok.png);
+	background-size: 100% 100%;
+}
+
+.learn{
+	background: url(../assets/learn.png);
+	background-size: 100% 100%;
 }
 
 
@@ -406,8 +606,9 @@ span.emoji{
 
 section#work-heyandrw{
 	width: 100%;
-	height: 1550px;
-	background: url(../assets/heyandrw-background-texture.jpg) fixed;
+	height: 2920px;
+	background: url(../assets/bg-about-heyandrw.jpg) bottom;
+	background-size: cover;
 	position: relative;
 	margin: auto;
 	z-index: 2;
@@ -422,11 +623,15 @@ section#work-heyandrw{
 }
 
 ul.firstlist{
-	width: 1170px;
-	height:auto;
-	margin: auto;
-	padding: 0px !important;
+	display: inline-block;
+	width: 1180px;
+	height:476px;
+	margin: 20px auto;
+	padding: 0px;
+
 }
+
+
 
 ul.firstlist a {
 	cursor: pointer;
@@ -434,17 +639,20 @@ ul.firstlist a {
 
 
 ul.firstlist a li{
-	opacity: .7;
+	opacity: .8;
 	cursor: pointer;
-	display: inline-block;
+	display: block;
 	background-position: bottom;
 	list-style: none;
 	background: white;
 	width: 270px;
 	height: 400px;
 	transition: .5;
-	margin-left: 13px;
-	margin-right: 13px;
+}
+
+ul.firstlist a li img{
+	width: 100%;
+	height: auto;
 }
 
 ul.firstlist a li:hover{
@@ -452,41 +660,27 @@ ul.firstlist a li:hover{
 	box-shadow: 0px 0px 200px black;
 }
 
-ul.firstlist a li span{
-	float: right;
-	right: 25px;
-	position: relative;
-	font-family: 'Lato', sans-serif;
-	font-weight: 200;
-	top: 85%;
-	font-size: 25px;
-	color: black;
-}
-
-ul.firstlist a li span:hover{
-	color: #781eff;
-}
 
 ul.firstlist a:first-child li{
-	width: 570px;
-	margin: 0px 13px 0px 0px;
+	width: 880px;
+	height: 476px;
+	float: left;
 }
 
 ul.firstlist a:last-child li{
-	margin: 0px 0px 0px 13px;
+	width: 280px;
+	height: 476px;
+	float: right;
 }
 
-ul.firstlist a:first-child li span{
-	top: 50%;
-	font-size: 60px;
-	margin-left: 0px;
-}
+
 
 ul.secoundlist{
-	width: 1170px;
+	width: 1180px;
 	height:auto;
-	margin: 26px auto;
-	padding: 0px !important;
+	margin: 0px auto;
+	position: relative;
+	padding: 0px;
 }
 
 ul.secoundlist a {
@@ -495,53 +689,43 @@ ul.secoundlist a {
 
 
 ul.secoundlist a li{
-	opacity: .7;
+	opacity: .8;
 	cursor: pointer;
 	display: inline-block;
 	background-position: bottom;
 	list-style: none;
 	background: white;
-	width: 270px;
-	height: 400px;
-	margin-left: 13px;
-	margin-right: 13px;
+	width: 780px;
+	height: 300px;
+	float: right;
 }
+
+ul.secoundlist a li img{
+	width: 100%;
+	height: auto;
+}
+
 
 ul.secoundlist a li:hover{
 	opacity: 1;
 	box-shadow: 0px 0px 200px black;
 }
 
-ul.secoundlist a li span{
-	float: left;
-	left: 20px;
-	position: relative;
-	font-family: 'Lato', sans-serif;
-	font-weight: 600;
-	width: 210px;
-	text-align: left;
-	color: black;
-	border-bottom: solid 2px;
-}
 
-ul.secoundlist a li span:hover{
-	color: #781eff;
-}
 
 ul.secoundlist a:last-child li{
-	width: 570px;
-	margin: 0px 0px 0px 13px;
+	margin-top: 18px;
+
 }
 
 ul.secoundlist a:first-child li{
-	margin: 0px 13px 0px 0px;
+	width: 380px;
+	height: 618px;
+	float: left;
 }
 
-ul.secoundlist a:last-child li span{
-	top: 55%;
-	font-size: 40px;
-	margin-left: 0px;
-}
+
+
 
 
 
@@ -584,138 +768,94 @@ ul.secoundlist a:last-child li span{
 
 /* ---------------------------------------- contact ---------------------------------------- */
 
-.heycontact{
+section#contact-heyandrw{
 	width: 100%;
-	height: 100%;
-	position: fixed;
-	background: rgba(0,0,0,.8);
-	z-index: 999999;
-	display: none;
-}
-
-.heycontact span.close{
-	cursor: pointer;
-	font-size: 40px;
-	color: white;
-	position: fixed;
-	font-family: 'Lato', sans-serif;
-	font-weight: 100;
-	top: 30px;
-	right: 70px;
-	float: right;
-	z-index: 999999999;
-}
-
-.heycontact .wrap{
-	width: 500px;
-	height: 550px;
-	background: white;
-	position: absolute;
-	bottom: 0px;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	margin: auto;
-	border-radius: 5px;
-}
-
-.heycontact .wrap #avatar{
-	left: 0px;
-	right: 0px;
-	margin: auto;
-	border-radius: 5px 5px 0px 0px;
-	width: 100%;
-	height: 180px;
-	background: url(../assets/heyandrw-avatar.jpg)  50% 55%;
-	background-size: 100%;
-}
-
-.heycontact .wrap .textcontact{
-	width: 400px;
-	height: auto;
-	position: relative;
-	top: 20px;
-	font-family: 'Lato', sans-serif;
-	font-size: 22px;
-	font-weight: 200;
-	margin: auto;
-}
-
-.heycontact .wrap .textcontact a{
-	text-decoration: none;
-	font-weight:800;
-	color: #781eff;
-}
-
-.heycontact .wrap ul.social{
-	width: 400px;
-	height: auto;
-	padding: 0px !important;
-	margin: 15px auto;
-	position: relative;
-	top: 20px;
-}
-
-.heycontact .wrap ul.social a li{
-	list-style: none;
-	display: inline-block;
-	width: 32px;
-	height: 32px;
-	margin: 5px 20px;
-}
-
-.heycontact .wrap ul.social a{
-	text-decoration: none;
-}
-
-.heycontact .wrap ul.social a li img{
-	width: 100%;
-	height: auto;
-}
-
-#mc_embed_signup{
-	position: relative;
-	top: 20px;
-}
-
-.mclabel{
-	font-family: 'Lato', sans-serif !important;
-	font-weight: 200;
-	font-size: 20px;
+	height: 760px;
+	background: url(../assets/bg-contact-heyandrw.jpg) bottom fixed;
 	text-align: center;
 }
 
-#mce-EMAIL{
-	width: 100%;
-	height: 40px;
-	-webkit-appearance:none;
-	outline: none;
-	margin: 20px auto;
-	padding: 7px;
-	font-family: 'Lato', sans-serif !important;
-	font-size: 15px;
-	border:solid 1px gray;
+section#contact-heyandrw .form{
+	position: relative;
+	width: 840px;
+	height: 480px;
+	text-align: left;
+	font-family: 'Enriqueta', serif;
+	color: white;
+	left:126px;
+	top: 200px;
+	line-height: 32px;
+	font-size: 18px;
 }
 
-.purple_button{
+section#contact-heyandrw .form input.datos{
+	width: 250px;
+	height: 40px;
+	margin:15px 10px 15px 0px;
+	appearance:none;
+	outline: none;
+	font-size: 20px;
+	background: transparent;
+	color: #02FCF2;
+	font-family: 'Enriqueta', serif;
+	border:none;
+	border-bottom: solid 1px white;
+}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(255,255,255,.3);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(255,255,255,.3);
+}
+:-ms-input-placeholder { /* IE 1255+ */
+  color: rgba(255,255,255,.3);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(255,255,255,.3);
+}
+
+
+section#contact-heyandrw .form textarea{
+	width: 100%;
+	resize: none;
+	text-align: left;
+	height: 80px;
+	margin:15px 20px 15px 0px;
+	appearance:none;
+	outline: none;
+	font-size: 20px;
+	background: transparent;
+	color: #02FCF2;
+	font-family: 'Enriqueta', serif;
+	border:none;
+	border-bottom: solid 1px white;
+}
+
+input.boton_enviar{
 	width: 200px;
-	height: 50px;
-	background-color: #781eff;
+	height: 45px;
+	background-color: #02FCF2;
 	appearance: none !important;
 	border: none;
-	color: white;
-	font-size: 18px;
-	font-family: 'Lato', sans-serif;
+	color: #000000;
+	font-size: 16px;
+	font-family: 'Enriqueta', serif;
 	letter-spacing: 1px;
-	appearance: none !important;
+	-webkit-appearance: none !important;
 	text-align: center;
 	border-radius: 25px;
-	box-shadow: 0px 10px 45px rgba(120, 30, 255, .5);
 	cursor: pointer;
-	position: relative;
-	top: 20px;
 	outline: none;
+	position: relative;
+	left:0px;
+	float: left;
+	margin-top: 40px;
 }
+
+
+
 
 
 

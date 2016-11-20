@@ -1,3 +1,17 @@
+$(document).ready(function(){                      
+  $("nav#menu_btn #menu").click(function(){
+    $("nav#menu_btn #menu span").toggleClass("close");
+    $( "div#menu_open").fadeToggle( "fast", "linear" );
+  }); 
+
+  $("div#menu_open ul li a").click(function(){
+    $("nav#menu_btn #menu span").removeClass("close");
+    $( "div#menu_open").fadeOut( "fast", "linear" );
+  }); 
+
+
+});
+
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
