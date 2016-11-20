@@ -26,17 +26,6 @@ $to = 'andrwhey@gmail.com';
 $headers = 'From: $email_from \r\n';
 
 mail($to,$email_subject,$email_body,$headers);
-
- 
-?>
- 
- 
-Thank you for contacting us. We will be in touch with you very soon.
- 
- 
-<?php
- 
-}
  
 ?>
 
