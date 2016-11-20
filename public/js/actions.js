@@ -36,20 +36,32 @@ $(window).scroll(function() {
         $(".heyandrw-home").fadeOut("fast");
     }
 
+    if (scroll >= 1) {
+        $(".inicio").addClass("active");
+    } else {
+        $(".acerca").removeClass("active");
+    }
+
     if (scroll >= 500) {
-        $(".about").addClass("active");
-    } else {
-        $(".about").removeClass("active");
+        $(".acerca").addClass("active");
+        $(".inicio").removeClass("active");
+    }  else {
+        $(".acerca").removeClass("active");
     }
 
-    if (scroll >= 1400) {
-        $(".about").removeClass("active");
+    if (scroll >= 2100) {
+        $(".acerca").removeClass("active");
+        $(".trabajo").addClass("active");
+    } else {
+        $(".trabajo").removeClass("active");
     }
 
-    if (scroll >= 1600) {
-        $(".work").addClass("active");
+
+    if (scroll >= 5350) {
+        $(".trabajo").removeClass("active");
+        $(".contacto").addClass("active");
     } else {
-        $(".work").removeClass("active");
+        $(".contacto").removeClass("active");
     }
 
 });

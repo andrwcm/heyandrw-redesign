@@ -14,7 +14,6 @@
 }
 
 
-//--- clearfix
 
 .clearfix:after {
     visibility: hidden;
@@ -103,7 +102,7 @@ a.button:before{
 	display: inline-block;
 	position: relative;
 	float: right;
-	left: -308px;
+	left: -278px;
 	z-index: 88;
 	top: 0px;
 	content: url("../assets/figure2.png");
@@ -191,32 +190,6 @@ ul.menu{
 
 }
 
-ul.menu a{
-	color: white;
-	font-size: 20px;
-	font-family: 'Enriqueta', serif;
-	font-weight: 600;
-	text-decoration: none;
-}
-
-ul.menu a li{
-	border-bottom: solid 2px white;
-	list-style: none;
-	height: 12px;
-	display: inline-block;
-	margin: 0px 30px 0px 30px;
-	transition: .3s;
-}
-
-ul.menu a li:hover{
-	border-bottom: solid 2px #0bf0e2 ;
-	padding-bottom: 20px;
-}
-
-.active{
-	border-bottom: solid 2px #0bf0e2 !important;
-	padding-bottom: 20px;
-}
 
 
 /* ---------------------------------------- END BUTTONS ---------------------------------------- */
@@ -380,6 +353,12 @@ div#menu_open ul li a{
 div#menu_open ul li a:hover{
 	color: #02D1C9;
 	transition: .3s;
+}
+
+a.active{ 
+	transition: .3s;
+	color: #02D1C9 !important;
+	font-weight: 700 !important;
 }
 
 
@@ -642,7 +621,7 @@ ul.firstlist a li{
 	opacity: .8;
 	cursor: pointer;
 	display: block;
-	background-position: bottom;
+	background:#343131 !important;
 	list-style: none;
 	background: white;
 	width: 270px;
@@ -692,7 +671,7 @@ ul.secoundlist a li{
 	opacity: .8;
 	cursor: pointer;
 	display: inline-block;
-	background-position: bottom;
+	background:#343131 !important;
 	list-style: none;
 	background: white;
 	width: 780px;
