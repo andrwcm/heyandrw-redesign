@@ -622,21 +622,16 @@ ul.firstlist a li{
 	opacity: .8;
 	cursor: pointer;
 	display: block;
-	background:#343131 !important;
 	list-style: none;
-	background: white;
 	width: 270px;
-	height: 400px;
-	overflow: hidden;
+	height: auto;
 	transition: .5;
 }
 
 ul.firstlist a li img{
 	width: 100%;
 	height: auto;
-	white-space: nowrap;
-    text-align: center;
-    margin: 1em 0
+    text-align: center
 }
 
 ul.firstlist a li:hover{
@@ -690,9 +685,7 @@ ul.secoundlist a li img{
 	height: auto;
 	vertical-align: middle;
 	position: relative;
-	white-space: nowrap;
-    text-align: center;
-    margin: 1em 0;
+
 }
 
 
@@ -720,39 +713,6 @@ ul.secoundlist a:first-child li{
 
 
 
-/* ---------------------------------------- projects classes ---------------------------------------- */
-
-.heyfont{
-	background: url(../assets/projects/heyfont.jpg) !important; 
-	background-size: cover !important;
-}
-
-
-.perd{
-	background: url(../assets/projects/perdural.jpg) !important; 
-	background-size: cover !important;
-}
-
-.gods{
-	background: url(../assets/projects/gods.jpg) !important; 
-	background-size: cover !important;
-}
-
-.ui{
-	background: url(../assets/projects/uiux.jpg) !important; 
-	background-size: cover !important;
-}
-
-.bio{
-	background: url(../assets/projects/bio.jpg) !important; 
-	background-size: cover !important;
-}
-
-
-.spo{
-	background: url(../assets/projects/spotify.png) center !important; 
-	background-size: cover !important;
-}
 
 
 
