@@ -622,6 +622,7 @@ ul.firstlist a li{
 	opacity: .8;
 	cursor: pointer;
 	display: block;
+	background:#343131 !important;
 	list-style: none;
 	background: white;
 	width: 270px;
@@ -675,6 +676,7 @@ ul.secoundlist a li{
 	opacity: .8;
 	cursor: pointer;
 	display: inline-block;
+	background:#343131 !important;
 	list-style: none;
 	background: white;
 	width: 780px;
