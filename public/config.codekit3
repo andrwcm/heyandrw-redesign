@@ -291,6 +291,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/assets\/projects\/blog.jpg": {
+		"ft": 16384,
+		"iS": 29209,
+		"oA": 0,
+		"oAP": "\/assets\/projects\/blog.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/assets\/projects\/gods.jpg": {
 		"ft": 16384,
 		"iS": 175424,
@@ -312,6 +320,14 @@
 		"iS": 21413,
 		"oA": 0,
 		"oAP": "\/assets\/projects\/perdural.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/projects\/progreso.jpg": {
+		"ft": 16384,
+		"iS": 60009,
+		"oA": 0,
+		"oAP": "\/assets\/projects\/progreso.jpg",
 		"oF": 0,
 		"opt": 0
 		},
@@ -388,6 +404,14 @@
 		"iS": 55564,
 		"oA": 0,
 		"oAP": "\/assets\/work\/bgjs.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/work\/blog.jpg": {
+		"ft": 16384,
+		"iS": 29209,
+		"oA": 0,
+		"oAP": "\/assets\/work\/blog.jpg",
 		"oF": 0,
 		"opt": 0
 		},
@@ -495,11 +519,19 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/assets\/work\/Spotify.jpg": {
+	"\/assets\/work\/progreso.jpg": {
+		"ft": 16384,
+		"iS": 60009,
+		"oA": 0,
+		"oAP": "\/assets\/work\/progreso.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/assets\/work\/spo.jpg": {
 		"ft": 16384,
 		"iS": 53461,
 		"oA": 0,
-		"oAP": "\/assets\/work\/Spotify.jpg",
+		"oAP": "\/assets\/work\/spo.jpg",
 		"oF": 0,
 		"opt": 0
 		},
@@ -524,12 +556,6 @@
 		"oAP": "\/favicon.png",
 		"oF": 0,
 		"opt": 0
-		},
-	"\/form.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/form.php",
-		"oF": 0
 		},
 	"\/index.html": {
 		"ft": 8192,
