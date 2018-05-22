@@ -1,16 +1,16 @@
 /* FONTS */
 
-@import url(//fonts.googleapis.com/css?family=Abril+Fatface);
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:400,600');
 
 @font-face {
-    font-family: 'Abril Fatface', sans-serif;
+    font-family: 'Vollkorn', serif;
 }
 
 
-@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Oswald:300,500);
 
 @font-face {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 
@@ -20,6 +20,7 @@
 	width: 100%;
 	height: 100%;
 	position: fixed;
+  top: 0px;
 	background-color: white;
  	 z-index:999999999999999999999;
 }
@@ -40,698 +41,80 @@
   height: auto;
 }
 
-/* BLUR */
-
-.blur1{
-	width: 430px;
-	height: 450px;
-	background-image: url(../assets/blur1.png);
-	background-size: cover;
-	position: fixed;
-	left: -300px;
-	top: 0px;
-	opacity: .5;
-	bottom: 0px;
-	margin: auto;
-	z-index: 888;
-}
-
-
-.blur2{
-	display: block;
-	width: 430px;
-	height: 450px;
-	opacity: .5;
-	background-image: url(../assets/blur2.png);
-	background-size: cover;
-	position: fixed;
-	right: -270px;
-	bottom: -120px;
-	margin: auto;
-	z-index: 888;
-}
-
-
-
-
-/* BUTTONS */
-
-a .purple_button{
-	width: 200px;
-	height: 50px;
-	background-color: #781eff;
-	appearance: none !important;
-	border: none;
-	color: white;
-	font-size: 18px;
-	font-family: 'Lato', sans-serif;
-	letter-spacing: 1px;
-	-webkit-appearance: none !important;
-	text-align: center;
-	border-radius: 25px;
-	box-shadow: 0px 10px 45px rgba(120, 30, 255, .7);
-	cursor: pointer;
-	outline: none;
-}
-
-.bottom{
-	position: absolute !important;
-	bottom: -430px;
-	left: 0px;
-	right: 0px;
-	margin: auto;
-}
-
-a .light_button{
-	width: 200px;
-	height: 50px;
-	background-color: #0bf0e2;
-	border: none;
-	-webkit-appearance: none !important;
-	color: white;
-	font-size: 18px;
-	font-family: 'Lato', sans-serif;
-	letter-spacing: 1px;
-	text-align: center;
-	border-radius: 25px;
-	box-shadow: 0px 8px 35px rgba(11, 240, 226, .7);
-	margin:50px auto;
-	float: left;
-	cursor: pointer;
-	outline: none;
-}
-
-a .line_button{
-	width: 200px;
-	height: 50px;
-	background-color: transparent;
-	border:solid 1px white;
-	-webkit-appearance: none !important;
-	color: white;
-	font-size: 18px;
-	font-family: 'Lato', sans-serif;
-	letter-spacing: 1px;
-	text-align: center;
-	border-radius: 25px;
-	margin:50px 30px;
-	float: left;
-	cursor: pointer;
-	outline: none;
-}
-
-.white{
-	color: white !important;
-}
-
-.visible{
-	display: block !important;
-
-}
-
-.none{
-	display: none;
-}
-
-
-.heyandrw-home{
-	display: none;
-	height: 110px;
-	display: none;
-	margin:auto;
-	width: 110px;
-	background: url(../assets/heyandrw-letters.png) no-repeat;
-	background-size: 100% 100%;
-	float: left;
-	top: 30px;
-	left: 0px;
-	z-index: 3;
-}
-
-ul.menu{
-	width: auto;
-	height: 60px;
-	padding: 0px;
-	float: right;
-	right: 40px;
-	top: 80px;
-	z-index: 888;
-
-}
-
-ul.menu a{
-	color: white;
-	font-size: 20px;
-	font-family: 'Lato', sans-serif;
-	font-weight: 600;
-	text-decoration: none;
-}
-
-ul.menu a li{
-	border-bottom: solid 2px white;
-	list-style: none;
-	height: 12px;
-	display: inline-block;
-	margin: 0px 30px 0px 30px;
-	transition: .3s;
-}
-
-ul.menu a li:hover{
-	border-bottom: solid 2px #0bf0e2 ;
-	padding-bottom: 20px;
-}
-
-.active{
-	border-bottom: solid 2px #0bf0e2 !important;
-	padding-bottom: 20px;
-}
-
-
-/* ---------------------------------------- END BUTTONS ---------------------------------------- */
-
-html{
-	height: 100%;
-	margin: 0px;
-}
-
 
 body{
-	height: 100%;
-	margin: auto;
-	background: url(../assets/heyandrw-background-texture.jpg) fixed;
-	background-position: top;
-	font-family: 'Abril Fatface', sans-serif;
-	background-size: cover;
-  	text-align: center;
+  margin: auto;
+  font-family: 'Vollkorn', serif;
+  font-size: 30px;
+  text-align: center;
+  background-color: black;
 }
 
-.layout{
-	width: 1170px;
-	position: relative;
-	top: 180px;
-	height: auto;
-	margin:  auto;
-	text-align: center;
+#donandres{
+  width: 100%;
+  height: auto;
+  background: url(../assets/donandres_bg.jpg) no-repeat, fixed;
+  background-size: cover;
 }
 
-.fixed{
-	position: fixed;
-	top: 35px;
-	height: 55px;
-	right: 0px;
-	left: 0px;
-	margin: auto;
-	z-index: 9999;
+.layout-container{
+  width: 1500px;
+  height: 1900px;
+  margin: auto;
 }
 
-
-
-/* ---------------------------------------- HOME ---------------------------------------- */
-
-#heyandrw-home{
-	width: 100%;
-	height: 100%;
-	margin:auto;
-	z-index: 1;
-	overflow: hidden;
-}
-
-.figure{
-	background: url(../assets/heyandrw-figures.png) fixed;
-	background-position: top;
-	background-size: 70%;
-	width: 100%;
-	height: 100%;
-	margin:auto;
-	text-align: center;
-	z-index: 111;
-}
-
-h1.heyandrw{
-	display: block !important;
-	height: 100px;
-	margin:auto;
-	width: 100px;
-	background: url(../assets/heyandrw-white.png) no-repeat;
-	background-size: cover;
-	position: relative;
-	z-index: 3;
-	top:0px;
-}
-
-h1.heyandrw span{
-	display: none;
-}
-
-#heyandrw-home .words{
-	width: 800px;
-	height:250px;
-	margin: auto;
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	top: 0px;
-	bottom: 0px;
-}
-#heyandrw-home div.designer{
-	width: 600px;
-	height: auto;
-	bottom: 150px;
-	margin: auto;
-}
-
-#heyandrw-home div.designer img{
-	width: 100%;
-	height: auto;
-}
-
-#heyandrw-home div.first-word{
-	width: 800px;
-	height: 30px;
-	left: 0px;
-	right: 0px;
-	margin: auto;
-	position: relative;
-	top: -50px;
-	color: white;
-	font-family: 'Lato', sans-serif;
-	font-weight: 100;
-	text-align: center;
-	font-size: 60px;
+.layout-container h1{
+  width: 200px;
+  height: 148px;
+  display: block;
+  float: left;
+  font-size: 1px;
+  color: rgba(0,0,0,0);
+  margin-top: 110px;
+  background: url(../assets/soydonandres_firma.svg) no-repeat;
+  background-size: cover;
+  position: fixed;
 }
 
 
-
-
-/* ---------------------------------------- ABOUT ---------------------------------------- */
-
-section#about-heyandrw{
-	width: 100%;
-	height: 1000px;
-	background: url(../assets/bg-about-heyandrw.jpg) fixed no-repeat;
-	background-size: cover;
-	background-position: bottom;
-	z-index: 2;
-  	margin: auto;
-  	position: relative;
+.layout-container section#info{
+  display: block;
+  width: 740px;
+  height: 403px;
+  border-left: solid 1px #EFC871;
+  padding-left: 24px;
+  color: white;
+  text-align: left;
+  font-weight: 400;
+  top: 521px;
+  font-size: 25px;
+  position: relative;
+  line-height: 36px;
+  letter-spacing: 1px;
 }
 
-section#about-heyandrw .layout .aboutText{
-	width: 70%;
-	height: auto;
-	color: white;
-	font-weight: 100;
-	font-size: 35px;
-	font-family: 'Lato', sans-serif;
-	text-align: left;
-	margin: auto;
-	position: relative;
-
+.layout-container section#info span{
+  color: #EFC871;
 }
 
-section#about-heyandrw .layout .aboutText a{
-	color:#0bf0e2;
-	border-bottom: 1px solid;
-	text-decoration: none;
-	font-weight: 300;
+.layout-container section#work{
+  width: 100%;
+  height: 500px;
+  display: block;
+  text-align: left;
+  position: relative;
+  top: 600px;
 }
 
-.layout h2{
-	font-family: 'Abril Fatface', sans-serif;
-	font-size: 125px;
-	letter-spacing: 2px;
-	margin:0px auto 40px auto;
-	text-align: left;
-	color: rgba(255, 255, 255,.7);
+.layout-container section#work h2{
+  color: white;
+  font-size: 55px;
 }
 
-span.emoji{
-	width: 45px;
-	height: 45px;
-	display: inline-block;
-	margin: 0px 5px -8px 5px;
+.layout-container section#work .thumbnail{
+  width: 31%;
+  height: 250px;
+  display: inline-block;
+  margin: 20px 10px;
+  background: black;
 }
-
-.andrw{
-	background: url(../assets/mostache.png);
-	background-size: cover;
-}
-
-.monoku{
-	background: url(../assets/monoku.png);
-	background-size: cover;
-}
-
-.hey{
-	background: url(../assets/hey.png);
-	background-size: cover;
-}
-
-.music{
-	background: url(../assets/music.png);
-	background-size: cover;
-}
-
-.cat{
-	background: url(../assets/cat.png);
-	background-size: cover;
-}
-
-.pma{
-	background: url(../assets/pma.png);
-	background-size: cover;
-}
-
-
-/* ---------------------------------------- MY WORK ---------------------------------------- */
-
-section#work-heyandrw{
-	width: 100%;
-	height: 1550px;
-	background: url(../assets/heyandrw-background-texture.jpg) fixed;
-	position: relative;
-	margin: auto;
-	z-index: 2;
-	text-align: center;
-}
-
-
-.contact-button{
-	margin: 80px auto !important;
-	position: relative !important;
-	width: 300px !important;
-}
-
-ul.firstlist{
-	width: 1170px;
-	height:auto;
-	margin: auto;
-	padding: 0px !important;
-}
-
-ul.firstlist a {
-	cursor: pointer;
-}
-
-
-ul.firstlist a li{
-	opacity: .7;
-	cursor: pointer;
-	display: inline-block;
-	background-position: bottom;
-	list-style: none;
-	background: white;
-	width: 270px;
-	height: 400px;
-	transition: .5;
-	margin-left: 13px;
-	margin-right: 13px;
-}
-
-ul.firstlist a li:hover{
-	opacity: 1;
-	box-shadow: 0px 0px 200px black;
-}
-
-ul.firstlist a li span{
-	float: right;
-	right: 25px;
-	position: relative;
-	font-family: 'Lato', sans-serif;
-	font-weight: 200;
-	top: 85%;
-	font-size: 25px;
-	color: black;
-}
-
-ul.firstlist a li span:hover{
-	color: #781eff;
-}
-
-ul.firstlist a:first-child li{
-	width: 570px;
-	margin: 0px 13px 0px 0px;
-}
-
-ul.firstlist a:last-child li{
-	margin: 0px 0px 0px 13px;
-}
-
-ul.firstlist a:first-child li span{
-	top: 50%;
-	font-size: 60px;
-	margin-left: 0px;
-}
-
-ul.secoundlist{
-	width: 1170px;
-	height:auto;
-	margin: 26px auto;
-	padding: 0px !important;
-}
-
-ul.secoundlist a {
-	cursor: pointer;
-}
-
-
-ul.secoundlist a li{
-	opacity: .7;
-	cursor: pointer;
-	display: inline-block;
-	background-position: bottom;
-	list-style: none;
-	background: white;
-	width: 270px;
-	height: 400px;
-	margin-left: 13px;
-	margin-right: 13px;
-}
-
-ul.secoundlist a li:hover{
-	opacity: 1;
-	box-shadow: 0px 0px 200px black;
-}
-
-ul.secoundlist a li span{
-	float: left;
-	left: 20px;
-	position: relative;
-	font-family: 'Lato', sans-serif;
-	font-weight: 600;
-	width: 210px;
-	text-align: left;
-	color: black;
-	border-bottom: solid 2px;
-}
-
-ul.secoundlist a li span:hover{
-	color: #781eff;
-}
-
-ul.secoundlist a:last-child li{
-	width: 570px;
-	margin: 0px 0px 0px 13px;
-}
-
-ul.secoundlist a:first-child li{
-	margin: 0px 13px 0px 0px;
-}
-
-ul.secoundlist a:last-child li span{
-	top: 55%;
-	font-size: 40px;
-	margin-left: 0px;
-}
-
-
-
-
-/* ---------------------------------------- projects classes ---------------------------------------- */
-
-.heyfont{
-	background: url(../assets/projects/heyfont.jpg) !important; 
-	background-size: cover !important;
-}
-
-
-.perd{
-	background: url(../assets/projects/perdural.jpg) !important; 
-	background-size: cover !important;
-}
-
-.gods{
-	background: url(../assets/projects/gods.jpg) !important; 
-	background-size: cover !important;
-}
-
-.ui{
-	background: url(../assets/projects/uiux.jpg) !important; 
-	background-size: cover !important;
-}
-
-.bio{
-	background: url(../assets/projects/bio.jpg) !important; 
-	background-size: cover !important;
-}
-
-
-.spo{
-	background: url(../assets/projects/spotify.png) center !important; 
-	background-size: cover !important;
-}
-
-
-
-/* ---------------------------------------- contact ---------------------------------------- */
-
-.heycontact{
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	background: rgba(0,0,0,.8);
-	z-index: 999999;
-	display: none;
-}
-
-.heycontact span.close{
-	cursor: pointer;
-	font-size: 40px;
-	color: white;
-	position: fixed;
-	font-family: 'Lato', sans-serif;
-	font-weight: 100;
-	top: 30px;
-	right: 70px;
-	float: right;
-	z-index: 999999999;
-}
-
-.heycontact .wrap{
-	width: 500px;
-	height: 550px;
-	background: white;
-	position: absolute;
-	bottom: 0px;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	margin: auto;
-	border-radius: 5px;
-}
-
-.heycontact .wrap #avatar{
-	left: 0px;
-	right: 0px;
-	margin: auto;
-	border-radius: 5px 5px 0px 0px;
-	width: 100%;
-	height: 180px;
-	background: url(../assets/heyandrw-avatar.jpg)  50% 55%;
-	background-size: 100%;
-}
-
-.heycontact .wrap .textcontact{
-	width: 400px;
-	height: auto;
-	position: relative;
-	top: 20px;
-	font-family: 'Lato', sans-serif;
-	font-size: 22px;
-	font-weight: 200;
-	margin: auto;
-}
-
-.heycontact .wrap .textcontact a{
-	text-decoration: none;
-	font-weight:800;
-	color: #781eff;
-}
-
-.heycontact .wrap ul.social{
-	width: 400px;
-	height: auto;
-	padding: 0px !important;
-	margin: 15px auto;
-	position: relative;
-	top: 20px;
-}
-
-.heycontact .wrap ul.social a li{
-	list-style: none;
-	display: inline-block;
-	width: 32px;
-	height: 32px;
-	margin: 5px 20px;
-}
-
-.heycontact .wrap ul.social a{
-	text-decoration: none;
-}
-
-.heycontact .wrap ul.social a li img{
-	width: 100%;
-	height: auto;
-}
-
-#mc_embed_signup{
-	position: relative;
-	top: 20px;
-}
-
-.mclabel{
-	font-family: 'Lato', sans-serif !important;
-	font-weight: 200;
-	font-size: 20px;
-	text-align: center;
-}
-
-#mce-EMAIL{
-	width: 100%;
-	height: 40px;
-	-webkit-appearance:none;
-	outline: none;
-	margin: 20px auto;
-	padding: 7px;
-	font-family: 'Lato', sans-serif !important;
-	font-size: 15px;
-	border:solid 1px gray;
-}
-
-.purple_button{
-	width: 200px;
-	height: 50px;
-	background-color: #781eff;
-	appearance: none !important;
-	border: none;
-	color: white;
-	font-size: 18px;
-	font-family: 'Lato', sans-serif;
-	letter-spacing: 1px;
-	appearance: none !important;
-	text-align: center;
-	border-radius: 25px;
-	box-shadow: 0px 10px 45px rgba(120, 30, 255, .5);
-	cursor: pointer;
-	position: relative;
-	top: 20px;
-	outline: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
