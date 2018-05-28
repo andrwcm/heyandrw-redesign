@@ -1,7 +1,0 @@
-{
-  "name": "heyfont",
-  "description": "The easy way to preview your google fonts",
-  "repository": "https://github.com/andrwcm/heyandrw-redesign.git",
-  "logo": "http:/heyandrw.heroku.com/public/assets/heyandrw.png",
-  "keywords": ["google", "fonts", "preview"]
-}
