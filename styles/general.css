@@ -74,6 +74,7 @@ body{
   background: url(../assets/soydonandres_firma.svg) no-repeat;
   background-size: cover;
   position: fixed;
+  z-index: 999999;
 }
 
 
@@ -90,6 +91,48 @@ body{
   font-size: 25px;
   position: relative;
   line-height: 36px;
+  letter-spacing: 1px;
+}
+
+
+.layout-container section#info ul {
+  display: block;
+  height: auto;
+  margin-top: 80px;
+  padding:0px;
+}
+
+.layout-container section#info ul li.links{
+  list-style: none;
+  width: 180px;
+  display: inline-block;
+  height: 50px;
+  margin:auto;
+}
+
+.layout-container section#info ul li.links span.small{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.3);
+}
+
+.layout-container section#info ul li.links a.link_work{
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #EFC871;
+  top: -10px;
+  opacity: .4;
+  position: relative;
+  transition: .5s;
+  letter-spacing: 0px;
+}
+
+.layout-container section#info ul li.links a.link_work:hover{
+  opacity: 1;
   letter-spacing: 1px;
 }
 
@@ -117,4 +160,15 @@ body{
   display: inline-block;
   margin: 20px 10px;
   background: black;
+  opacity: .5;
+  transition: .5s;
+}
+
+.layout-container section#work .thumbnail:hover{
+  opacity: 1;
+}
+
+.layout-container section#work .thumbnail a img{
+  width: 100%;
+  height: auto;
 }
