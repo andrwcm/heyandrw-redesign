@@ -1,0 +1,39 @@
+@media (max-width: 1440px) {
+  	.layout-container{
+	  width: 1100px;
+	  height: 1900px;
+	  margin: auto;
+	}
+
+	.layout-container section#info{
+	  top: 470px;
+	}
+}
+
+
+
+
+
+@media (max-width: 1100px) {
+  	.layout-container{
+	  width: 85%;
+	  height: 2500px;
+	  margin: auto;
+
+	}
+
+	.layout-container section#info{
+	  top: 470px;
+	}
+
+
+	.layout-container section#work .thumbnail{
+	  width: 47%;
+	  height: 250px;
+	  display: inline-block;
+	  margin: 20px 10px;
+	  background: black;
+	  opacity: .5;
+	  transition: .5s;
+	}
+}

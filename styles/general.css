@@ -1,0 +1,175 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:400,600');
+
+@font-face {
+    font-family: 'Vollkorn', serif;
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Oswald:300,500);
+
+@font-face {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* ---------------------------------------- END FONTS ---------------------------------------- */
+
+#preloader{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+  top: 0px;
+	background-color: white;
+ 	 z-index:999999999999999999999;
+}
+
+#preloader #status{
+	width: 100px;
+	height: 113px;
+	position: absolute;
+	margin: auto;
+	top: -100px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+}
+
+#preloader #status img{
+  width: 100%;
+  height: auto;
+}
+
+
+body{
+  margin: auto;
+  font-family: 'Vollkorn', serif;
+  font-size: 30px;
+  text-align: center;
+  background-color: black;
+}
+
+#donandres{
+  width: 100%;
+  height: auto;
+  background: url(../assets/donandres_bg.jpg) no-repeat, fixed;
+  background-size: cover;
+}
+
+.layout-container{
+  width: 1500px;
+  height: 1900px;
+  margin: auto;
+}
+
+.layout-container h1{
+  width: 200px;
+  height: 148px;
+  display: block;
+  float: left;
+  font-size: 1px;
+  color: rgba(0,0,0,0);
+  margin-top: 110px;
+  background: url(../assets/soydonandres_firma.svg) no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: 999999;
+}
+
+
+.layout-container section#info{
+  display: block;
+  width: 740px;
+  height: 403px;
+  border-left: solid 1px #EFC871;
+  padding-left: 24px;
+  color: white;
+  text-align: left;
+  font-weight: 400;
+  top: 521px;
+  font-size: 25px;
+  position: relative;
+  line-height: 36px;
+  letter-spacing: 1px;
+}
+
+
+.layout-container section#info ul {
+  display: block;
+  height: auto;
+  margin-top: 80px;
+  padding:0px;
+}
+
+.layout-container section#info ul li.links{
+  list-style: none;
+  width: 180px;
+  display: inline-block;
+  height: 50px;
+  margin:auto;
+}
+
+.layout-container section#info ul li.links span.small{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.3);
+}
+
+.layout-container section#info ul li.links a.link_work{
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #EFC871;
+  top: -10px;
+  opacity: .4;
+  position: relative;
+  transition: .5s;
+  letter-spacing: 0px;
+}
+
+.layout-container section#info ul li.links a.link_work:hover{
+  opacity: 1;
+  letter-spacing: 1px;
+}
+
+.layout-container section#info span{
+  color: #EFC871;
+}
+
+.layout-container section#work{
+  width: 100%;
+  height: 500px;
+  display: block;
+  text-align: left;
+  position: relative;
+  top: 600px;
+}
+
+
+.layout-container section#work h2{
+  color: white;
+  font-size: 55px;
+}
+
+.layout-container section#work .thumbnail{
+  width: 31%;
+  height: 250px;
+  display: inline-block;
+  margin: 20px 10px;
+  background: black;
+  opacity: .5;
+  transition: .5s;
+}
+
+.layout-container section#work .thumbnail:hover{
+  opacity: 1;
+}
+
+.layout-container section#work .thumbnail a img{
+  width: 100%;
+  height: auto;
+}
