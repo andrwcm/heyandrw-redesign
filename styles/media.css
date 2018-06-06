@@ -37,3 +37,52 @@
 	  transition: .5s;
 	}
 }
+
+
+
+
+@media (max-width: 850px) {
+  	.layout-container{
+	  width: 90%;
+	  height: 2500px;
+	  margin: auto;
+
+	}
+
+	.layout-container section#info{
+	  top: 420px;
+    width: 90%;
+    font-size: 17px;
+    line-height: 20px;
+    height: auto;
+	}
+
+
+	.layout-container section#work .thumbnail{
+	  width: 95%;
+	  height: 250px;
+	  display: inline-block;
+	  margin: 20px 10px;
+	  background: black;
+	  opacity: .5;
+	  transition: .5s;
+	}
+
+  .layout-container section#info ul {
+    margin-top: 40px;
+  }
+
+  .layout-container section#info ul li.links a.link_work{
+    top: -2px;
+  }
+
+
+  .layout-container section#work{
+    top: 500px;
+  }
+
+  .layout-container section#work h2{
+    color: white;
+    font-size: 40px;
+  }
+}

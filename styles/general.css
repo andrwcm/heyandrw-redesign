@@ -21,16 +21,17 @@
 	height: 100%;
 	position: fixed;
   top: 0px;
-	background-color: white;
+	background-color: black;
+  display: block;
  	 z-index:999999999999999999999;
 }
 
 #preloader #status{
-	width: 100px;
-	height: 113px;
+	width: 220px;
+  height: 220px;
 	position: absolute;
 	margin: auto;
-	top: -100px;
+	top:0px;
 	bottom: 0px;
 	right: 0px;
 	left: 0px;
@@ -50,6 +51,44 @@ body{
   background-color: black;
 }
 
+ul.links_top{
+  position: absolute;
+  float: left;
+  top: 250px;
+  padding: 0px;
+}
+
+
+ul.links_top a{
+  text-decoration: none;
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+  opacity: .4;
+  transition: .5s;
+
+}
+
+ul.links_top a:hover{
+  opacity: 1;
+
+}
+
+ul.links_top a li{
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+  border-bottom: solid 1px rgba(255,255,255,.0);
+  height: 15px;
+}
+
+ul.links_top a li:hover{
+  border-bottom: solid 1px rgba(255,255,255,1);
+  height: 25px;
+  transition: .5s;
+}
+
 #donandres{
   width: 100%;
   height: auto;
@@ -59,7 +98,7 @@ body{
 
 .layout-container{
   width: 1500px;
-  height: 1900px;
+  height: 2000px;
   margin: auto;
 }
 
@@ -70,10 +109,10 @@ body{
   float: left;
   font-size: 1px;
   color: rgba(0,0,0,0);
-  margin-top: 110px;
+  margin-top: 70px;
   background: url(../assets/soydonandres_firma.svg) no-repeat;
   background-size: cover;
-  position: fixed;
+  position: absolute;
   z-index: 999999;
 }
 

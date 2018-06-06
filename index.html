@@ -35,20 +35,43 @@
 		<link rel="stylesheet" type="text/css" href="styles/media.css">
 
 
+
+
 	</head>
 
 	<body>
+		<div id="preloader">
+			<div id="status">
+					<img src="assets/loader.gif" alt="@soydonandres">
+			</div>
+		</div>
+
 
 		<div id="donandres">
 			<div class="layout-container">
 				<h1>@soydonandres</h1>
+
+				<ul class="links_top">
+					<a href="https://twitter.com/soydonandres" target="_blank">
+						<li>Twitter</li>
+					</a>
+					<a href="https://www.behance.net/soydonandres" target="_blank">
+						<li>Behance</li>
+					</a>
+					<a href="https://dribbble.com/donandres" target="_blank">
+						<li>Dribbble</li>
+					</a>
+					<a href="mailto:hola@soydonandres.co?subject=Hola Andrés 🙌🏻&body=Me gustaría poder contactarte para un trabajo que tengo en mente o sencillamente para charlar de diseño :D" target="_blank">
+						<li>Contacto</li>
+					</a>
+				</ul>
 
 				<section id="info">
 					Soy Andrés Carreño, diseñador gráfico de <span>Bogotá - Colombia</span>, con más de <span>8 años de experiencia</span>, trabajando en <span>diseño de marca</span>, material impreso y <span>diseño de productos digitales UI/UX</span>.
 					<br>
 					<br>
 					Amante de la <span>música</span> y de los <span>tatuajes</span>, un artista incompleto, un soñador extremo.
-					
+
 					<ul>
 						<li class="links">
 							<span class="small">Diseñador Senior</span>
@@ -65,7 +88,7 @@
 							<a href="http://icoss.win" class="link_work" target="_blank">icoss.win</a>
 						</li>
 					</ul>
-					
+
 				</section>
 
 
@@ -79,29 +102,35 @@
 					</div>
 
 					<div class="thumbnail">
-						<a href="https://www.behance.net/gallery/45296917/BogotaJS" target="_blank">
-							<img src="assets/soydonandres_gods.png" alt="Bogotá JS">
+						<a href="https://www.behance.net/gallery/37161875/Gods-Country" target="_blank">
+							<img src="assets/soydonandres_gods.png" alt="God's Country">
 						</a>
 
 					</div>
 
 					<div class="thumbnail">
-						<a href="https://www.behance.net/gallery/45296917/BogotaJS" target="_blank">
-							<img src="assets/soydonandres_heyfont.png" alt="Bogotá JS">
-						</a>
-					</div>
-					
-
-					<div class="thumbnail">
-						<a href="https://www.behance.net/gallery/45296917/BogotaJS" target="_blank">
-							<img src="assets/soydonandres_soraportafolio.png" alt="Bogotá JS">
+						<a href="https://www.behance.net/gallery/29907565/heyFont" target="_blank">
+							<img src="assets/soydonandres_heyfont.png" alt="Heyfont">
 						</a>
 					</div>
 
 
 					<div class="thumbnail">
-						<a href="https://www.behance.net/gallery/45296917/BogotaJS" target="_blank">
-							<img src="assets/soydonandres_takoyaki.png" alt="Bogotá JS">
+						<a href="https://www.behance.net/gallery/59308375/Sora-Tattoo-Portafolio" target="_blank">
+							<img src="assets/soydonandres_soraportafolio.png" alt="Sora tattoo">
+						</a>
+					</div>
+
+
+					<div class="thumbnail">
+						<a href="https://www.behance.net/gallery/45446413/Takoyaki" target="_blank">
+							<img src="assets/soydonandres_takoyaki.png" alt="Takoyaki">
+						</a>
+					</div>
+
+					<div class="thumbnail">
+						<a href="https://www.behance.net/gallery/66476929/Alas-en-Libertad" target="_blank">
+							<img src="assets/soydonandres_alasenlibertad.jpg" alt="Alas en Libertad">
 						</a>
 					</div>
 
@@ -113,5 +142,14 @@
 		</div>
 
 	</body>
+
+	<script type="text/javascript">
+		//acciones precarga
+		$(window).load(function() {
+					$("#status").fadeOut();
+					$("#preloader").delay(350).fadeOut("slow", function(){
+			 });
+		})
+	</script>
 
 </html>
